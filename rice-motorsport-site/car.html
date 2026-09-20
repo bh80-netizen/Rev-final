@@ -1,0 +1,502 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="Photos/Thumb_Logo.png" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Carrera | Rice Motorsports Team</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config" src="assets/js/config/car.js"></script>
+    <link rel="stylesheet" href="assets/css/pages/car.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body
+    class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface-dim/80 backdrop-blur-xl">
+      <div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
+        <div class="text-2xl font-bold tracking-tighter text-on-surface font-headline">Rice Motorsports Team</div>
+        <div class="hidden md:flex gap-10">
+          <a
+            class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="font-headline tracking-tight uppercase text-primary font-bold border-b-2 border-primary pb-1"
+            href="car.html"
+            >The Car</a
+          >
+          <a
+            class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            href="sponsorship.html"
+            >Sponsorship</a
+          >
+          <a
+            class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            href="season.html"
+            >Season</a
+          >
+        </div>
+        <a
+          href="mailto:ricemotorsportsteam@gmail.com?subject=Sponsorship%20Inquiry&body=Hi%20Rice%20Motorsports%20Team%2C%0A%0AI%20am%20reaching%20out%20to%20discuss%20a%20potential%20sponsorship%20opportunity%20with%20your%20team%20for%20the%202026%20season.%0A%0AI%20would%20love%20to%20learn%20more%20about%20your%20sponsorship%20packages%20and%20explore%20how%20we%20can%20partner%20together.%0A%0ALooking%20forward%20to%20hearing%20from%20you%2C%0A%5BYour%20Name%5D"
+          class="hidden md:inline-block bg-primary-container text-on-primary-container px-6 py-2.5 font-label text-sm uppercase tracking-widest font-bold hover:bg-primary transition-all duration-300 active:scale-95"
+        >
+          Contact Us
+        </a>
+        <!-- Hamburger button (mobile only) -->
+        <button
+          id="nav-toggle"
+          class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <span class="nav-bar block w-6 h-0.5 bg-on-surface transition-all duration-300"></span>
+          <span class="nav-bar block w-6 h-0.5 bg-on-surface transition-all duration-300"></span>
+          <span class="nav-bar block w-6 h-0.5 bg-on-surface transition-all duration-300"></span>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden flex-col bg-surface-dim/95 backdrop-blur-xl border-t border-outline-variant/20 px-6 py-6 gap-5"
+      >
+        <a
+          class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors border-b border-outline-variant/20 pb-4"
+          href="index.html"
+          >Home</a
+        >
+        <a
+          class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors border-b border-outline-variant/20 pb-4"
+          href="about.html"
+          >About</a
+        >
+        <a
+          class="font-headline tracking-tight uppercase text-primary font-bold border-b border-outline-variant/20 pb-4"
+          href="car.html"
+          >The Car</a
+        >
+        <a
+          class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors border-b border-outline-variant/20 pb-4"
+          href="sponsorship.html"
+          >Sponsorship</a
+        >
+        <a
+          class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors border-b border-outline-variant/20 pb-4"
+          href="season.html"
+          >Season</a
+        >
+        <a
+          href="mailto:ricemotorsportsteam@gmail.com?subject=Sponsorship%20Inquiry&body=Hi%20Rice%20Motorsports%20Team%2C%0A%0AI%20am%20reaching%20out%20to%20discuss%20a%20potential%20sponsorship%20opportunity%20with%20your%20team%20for%20the%202026%20season.%0A%0AI%20would%20love%20to%20learn%20more%20about%20your%20sponsorship%20packages%20and%20explore%20how%20we%20can%20partner%20together.%0A%0ALooking%20forward%20to%20hearing%20from%20you%2C%0A%5BYour%20Name%5D"
+          class="bg-primary-container text-on-primary-container px-6 py-3 font-label text-sm uppercase tracking-widest font-bold text-center hover:bg-primary transition-all duration-300"
+        >
+          Contact Us
+        </a>
+      </div>
+    </nav>
+    <main class="relative">
+      <!-- Hero Section -->
+      <section class="relative min-h-screen flex items-center pt-24 overflow-hidden bg-surface-container-lowest">
+        <div class="absolute inset-0 z-0">
+          <img
+            class="w-full h-full object-cover opacity-60"
+            alt="The Carrera solar car with its canopy open, front three-quarter view in the shop"
+            src="assets/img/car-front-open-02.jpg"
+          />
+          <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div class="container mx-auto px-12 relative z-10 grid grid-cols-1 md:grid-cols-12 gap-12">
+          <div class="md:col-span-7 mt-20">
+            <span class="text-primary font-label uppercase tracking-[0.25em] text-xs mb-5 block"
+              >Chassis 001 · Single-seat solar racer</span
+            >
+            <h1 class="font-headline text-6xl md:text-7xl font-bold leading-[0.95] tracking-tight mb-8">Carrera</h1>
+            <p class="max-w-xl text-on-surface-variant text-lg leading-relaxed mb-12">
+              A single-seat solar racer built around a carbon-fibre catamaran monocoque: two slender hulls carrying the
+              wheels and suspension, bridged by a structural deck that also happens to be a six-square-metre solar
+              array. Everything on this car exists to move one person a very long way on very little energy.
+            </p>
+            <div class="flex flex-wrap gap-x-12 gap-y-6 border-l border-outline-variant/30 pl-8">
+              <div>
+                <span class="block text-primary font-label text-[10px] uppercase tracking-[0.2em] mb-2">Array</span>
+                <span class="block font-headline text-3xl font-bold">6 m²</span>
+              </div>
+              <div>
+                <span class="block text-primary font-label text-[10px] uppercase tracking-[0.2em] mb-2">Battery</span>
+                <span class="block font-headline text-3xl font-bold">5.25 kWh</span>
+              </div>
+              <div>
+                <span class="block text-primary font-label text-[10px] uppercase tracking-[0.2em] mb-2">Driver</span>
+                <span class="block font-headline text-3xl font-bold">1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Technical Specs Bento Grid -->
+      <section class="py-32 bg-surface speed-lines">
+        <div class="container mx-auto px-12">
+          <div class="mb-20 max-w-2xl">
+            <span class="font-label text-primary text-[11px] tracking-[0.25em] uppercase block mb-5">Systems</span>
+            <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-5">How it works</h2>
+            <p class="text-on-surface-variant leading-relaxed">
+              Sunlight lands on the array, trackers pull the most power they can out of it, the pack buffers what the
+              motor doesn't need right now, and a hub motor turns the rest into distance. There is no engine, no
+              gearbox, and nothing to refuel.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-px bg-outline-variant/20">
+            <!-- Solar array -->
+            <div
+              class="md:col-span-2 bg-surface-container-low p-12 hover:bg-surface-container transition-all duration-500"
+            >
+              <span class="material-symbols-outlined text-primary mb-6 text-4xl">solar_power</span>
+              <h3 class="font-headline text-2xl font-bold mb-5">Solar array</h3>
+              <ul class="space-y-3 font-label text-sm text-on-surface-variant">
+                <li class="flex justify-between gap-4 border-b border-outline-variant/10 pb-2">
+                  <span>Aperture area</span>
+                  <span class="text-on-surface text-right">6 m² (class maximum)</span>
+                </li>
+                <li class="flex justify-between gap-4 border-b border-outline-variant/10 pb-2">
+                  <span>Cells</span>
+                  <span class="text-on-surface text-right">Monocrystalline silicon</span>
+                </li>
+                <li class="flex justify-between gap-4 border-b border-outline-variant/10 pb-2">
+                  <span>Conversion</span>
+                  <span class="text-on-surface text-right">Maximum power point trackers</span>
+                </li>
+                <li class="flex justify-between gap-4">
+                  <span>Concentrators</span>
+                  <span class="text-on-surface text-right">Not permitted</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Energy storage -->
+            <div class="bg-surface-container-lowest p-12 hover:bg-surface-container-low transition-all duration-500">
+              <span class="material-symbols-outlined text-primary mb-6 text-4xl">battery_charging_full</span>
+              <h3 class="font-headline text-xl font-bold mb-4">Energy storage</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                Lithium pack in an isolated, vented, fused enclosure, watched continuously by a battery protection
+                system that can open the contactors on its own.
+              </p>
+              <div class="text-primary font-headline text-2xl font-bold">5.25 kWh</div>
+            </div>
+            <!-- Driver cell -->
+            <div class="bg-surface-container-low p-12 hover:bg-surface-container transition-all duration-500">
+              <span class="material-symbols-outlined text-primary mb-6 text-4xl">security</span>
+              <h3 class="font-headline text-xl font-bold mb-4">Driver cell</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed">
+                A metal roll cage — composites aren't allowed here — bonded into the monocoque, with its front members
+                raked back at least 15° so bodywork is thrown clear of the driver in a rollover.
+              </p>
+            </div>
+            <!-- Braking -->
+            <div class="bg-surface-container-lowest p-12 hover:bg-surface-container-low transition-all duration-500">
+              <span class="material-symbols-outlined text-primary mb-6 text-4xl">slow_motion_video</span>
+              <h3 class="font-headline text-xl font-bold mb-4">Brakes</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed">
+                Dual hydraulic circuits sized to pull the car down from 30 mph at better than 4.72 m/s² on wet pavement,
+                repeatably, without wandering out of lane.
+              </p>
+            </div>
+            <!-- Cockpit -->
+            <div
+              class="md:col-span-2 bg-surface-container-low p-12 flex flex-col justify-center hover:bg-surface-container transition-all duration-500"
+            >
+              <div class="flex items-center justify-between mb-8 gap-4">
+                <h3 class="font-headline text-3xl font-bold">The cockpit</h3>
+                <span class="bg-primary/10 text-primary px-3 py-1 font-label text-[10px] tracking-widest uppercase"
+                  >Out in 10s</span
+                >
+              </div>
+              <img
+                class="w-full h-48 object-cover mb-8 filter grayscale hover:grayscale-0 transition-all duration-700"
+                alt="Team members reviewing a CAD model of the car on a laptop"
+                src="assets/img/laptop-cad-review-02.jpg"
+              />
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Five-point harness, padded head restraint, 50 mm of clearance around the helmet in every direction, and
+                a canopy the driver can be clear of in under ten seconds unassisted. Driver plus kit is ballasted to 80
+                kg so no one gains an advantage by being light.
+              </p>
+            </div>
+            <!-- Aero -->
+            <div class="bg-surface-container-lowest p-12 hover:bg-surface-container-low transition-all duration-500">
+              <span class="material-symbols-outlined text-primary mb-6 text-4xl">air</span>
+              <h3 class="font-headline text-xl font-bold mb-4">Aerodynamics</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed">
+                The catamaran layout hides the wheels in faired hulls and keeps the frontal area small. At cruise, drag
+                — not power — is what decides how far the day's sunlight carries us.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Components Breakdown Section (Asymmetric) -->
+      <section class="py-32 bg-surface-container-lowest overflow-hidden">
+        <div class="container mx-auto px-12">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-24 items-center">
+            <div class="md:col-span-5">
+              <span class="font-label text-primary text-[11px] tracking-[0.25em] uppercase block mb-5">Build</span>
+              <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-12 leading-tight">
+                Why a catamaran
+              </h2>
+              <div class="space-y-14">
+                <div class="relative pl-8 border-l-2 border-primary">
+                  <span
+                    class="absolute -left-3 top-0 bg-primary w-5 h-5 flex items-center justify-center text-[10px] font-bold text-on-primary"
+                    >01</span
+                  >
+                  <h4 class="font-headline text-lg font-bold mb-2">Two hulls, one deck</h4>
+                  <p class="text-on-surface-variant text-sm leading-relaxed">
+                    Wheels, suspension and steering live in slim outboard hulls. The deck spanning them carries the
+                    array and the driver, so the widest, flattest part of the car is also the part collecting sunlight.
+                  </p>
+                </div>
+                <div class="relative pl-8 border-l-2 border-outline-variant">
+                  <span
+                    class="absolute -left-3 top-0 bg-outline-variant w-5 h-5 flex items-center justify-center text-[10px] font-bold text-on-surface"
+                    >02</span
+                  >
+                  <h4 class="font-headline text-lg font-bold mb-2">Carbon monocoque</h4>
+                  <p class="text-on-surface-variant text-sm leading-relaxed">
+                    The shell is the structure. Carbon-fibre skins over a cored sandwich give the stiffness to hang
+                    suspension off directly, without the weight of a separate spaceframe underneath it.
+                  </p>
+                </div>
+                <div class="relative pl-8 border-l-2 border-outline-variant">
+                  <span
+                    class="absolute -left-3 top-0 bg-outline-variant w-5 h-5 flex items-center justify-center text-[10px] font-bold text-on-surface"
+                    >03</span
+                  >
+                  <h4 class="font-headline text-lg font-bold mb-2">Stability, because the rules say so</h4>
+                  <p class="text-on-surface-variant text-sm leading-relaxed">
+                    A wide track and low mass centre are what let the car hold a 3.5 m lane in a crosswind at speed.
+                    Wander out of it three times on the road and officials cap how fast you're allowed to go.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="md:col-span-7 relative">
+              <div class="absolute -right-24 top-0 w-full h-full bg-primary/5 -skew-x-12 z-0"></div>
+              <img
+                class="relative z-10 w-full h-[600px] object-cover shadow-2xl"
+                alt="Close-up of the drive motor and its controller board during assembly"
+                src="assets/img/mech-motor-electronics.jpg"
+              />
+              <div class="absolute -bottom-10 -left-10 glass-panel p-8 border border-outline-variant/20 z-20 max-w-sm">
+                <h5 class="font-headline text-primary font-bold mb-3">On the drivetrain</h5>
+                <p class="text-xs font-label text-on-surface-variant leading-relaxed">
+                  A solar car spends its life at part throttle. The motor and controller are chosen for efficiency at
+                  cruise, not peak output — a point of efficiency held for eight hours is worth more than any burst of
+                  power.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The rule book -->
+      <section class="py-32 bg-surface-container-low">
+        <div class="container mx-auto px-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+            <div class="lg:col-span-5">
+              <span class="font-label text-primary text-[11px] tracking-[0.25em] uppercase block mb-5"
+                >The rule book</span
+              >
+              <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+                Engineering right up to the edge of the rules
+              </h2>
+            </div>
+            <div class="lg:col-span-7 lg:pt-6">
+              <p class="text-on-surface-variant leading-relaxed">
+                The regulations run to ninety-odd pages, and they set the boundary — six square metres of cells, 5.25
+                kWh of storage, a fixed envelope. Everything inside that boundary is ours to win or lose. Teams are
+                separated by how close they can get to the limits without going over, and we design to sit right on
+                them.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-outline-variant/20 mb-16">
+            <div class="bg-surface-container-low p-8">
+              <span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary block mb-3">Max length</span>
+              <span class="font-headline text-2xl font-bold">5.80 m</span>
+            </div>
+            <div class="bg-surface-container-low p-8">
+              <span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary block mb-3">Max width</span>
+              <span class="font-headline text-2xl font-bold">2.30 m</span>
+            </div>
+            <div class="bg-surface-container-low p-8">
+              <span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary block mb-3">Max height</span>
+              <span class="font-headline text-2xl font-bold">1.65 m</span>
+            </div>
+            <div class="bg-surface-container-low p-8">
+              <span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary block mb-3"
+                >Ground clearance</span
+              >
+              <span class="font-headline text-2xl font-bold">&gt; 75 mm</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <h3 class="font-headline text-xl font-bold mb-6">Dynamic scrutineering</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                Before a single competitive lap, the car has to prove it handles. Officials run it through a fixed set
+                of tests, and failing any of them keeps you in the paddock.
+              </p>
+              <ul class="space-y-3 text-sm">
+                <li class="flex justify-between gap-4 border-b border-outline-variant/10 pb-3">
+                  <span class="text-on-surface-variant">Figure-8, 6 m radius circles</span>
+                  <span class="text-on-surface">&lt; 8 s per side</span>
+                </li>
+                <li class="flex justify-between gap-4 border-b border-outline-variant/10 pb-3">
+                  <span class="text-on-surface-variant">Slalom, 126 m, cones every 18 m</span>
+                  <span class="text-on-surface">&lt; 11.5 s</span>
+                </li>
+                <li class="flex justify-between gap-4 border-b border-outline-variant/10 pb-3">
+                  <span class="text-on-surface-variant">Braking from 30 mph, wet</span>
+                  <span class="text-on-surface">&gt; 4.72 m/s²</span>
+                </li>
+                <li class="flex justify-between gap-4 border-b border-outline-variant/10 pb-3">
+                  <span class="text-on-surface-variant">Lane holding at speed</span>
+                  <span class="text-on-surface">3.5 m for 250 m</span>
+                </li>
+                <li class="flex justify-between gap-4">
+                  <span class="text-on-surface-variant">Unassisted driver egress</span>
+                  <span class="text-on-surface">&lt; 10 s</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-headline text-xl font-bold mb-6">Paper before metal</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                The car is reviewed long before it's finished. Each stage has to be signed off by a certifying reviewer
+                outside the team.
+              </p>
+              <ol class="space-y-4 text-sm">
+                <li class="flex gap-4">
+                  <span class="font-headline text-primary font-bold shrink-0">01</span>
+                  <span class="text-on-surface-variant"
+                    ><span class="text-on-surface">Preliminary design report</span> — mechanical and electrical
+                    concepts, roll-over and impact protection sketched out.</span
+                  >
+                </li>
+                <li class="flex gap-4">
+                  <span class="font-headline text-primary font-bold shrink-0">02</span>
+                  <span class="text-on-surface-variant"
+                    ><span class="text-on-surface">Vehicle design report</span> — full mechanical, electrical and solar
+                    collector documentation, including certified structural calculations for the driver cell.</span
+                  >
+                </li>
+                <li class="flex gap-4">
+                  <span class="font-headline text-primary font-bold shrink-0">03</span>
+                  <span class="text-on-surface-variant"
+                    ><span class="text-on-surface">Build review</span> — evidence the thing being welded and laid up
+                    matches the thing that was approved.</span
+                  >
+                </li>
+                <li class="flex gap-4">
+                  <span class="font-headline text-primary font-bold shrink-0">04</span>
+                  <span class="text-on-surface-variant"
+                    ><span class="text-on-surface">Scrutineering</span> — body and sizing, driver, electrical, battery
+                    protection, solar collector, mechanical, then the dynamic tests. Every station has to go
+                    green.</span
+                  >
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="py-32 bg-surface text-center relative overflow-hidden">
+        <div
+          class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"
+        ></div>
+        <div class="container mx-auto px-12 relative z-10">
+          <h3 class="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6">
+            Want to help build the next one?
+          </h3>
+          <p class="max-w-xl mx-auto text-on-surface-variant mb-10 font-body">
+            We need composites, embedded firmware, power electronics, machinists, strategists and people who can run a
+            budget. No experience required for most of it — that's rather the point.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfSnPqvyHHyqFGLFzY9vx0FURCidMp_kNM16payr3QcCEci3g/viewform"
+              class="bg-primary-container text-on-primary-container px-10 py-4 font-label text-sm font-bold uppercase tracking-widest hover:bg-primary transition-colors"
+            >
+              Join the team
+            </a>
+            <a
+              href="sponsorship.html"
+              class="border border-outline-variant text-on-surface px-10 py-4 font-label text-sm font-bold uppercase tracking-widest hover:bg-surface-container transition-colors"
+            >
+              Sponsor us
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full border-t border-outline-variant/20 bg-surface-container-lowest">
+      <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-[1920px] mx-auto">
+        <div class="mb-8 md:mb-0">
+          <div class="text-xl font-bold text-on-surface font-headline uppercase mb-2">Rice Motorsports Team</div>
+          <p class="font-manrope text-sm text-on-surface-variant tracking-tight">
+            © 2026 Rice Motorsports Team · Rice University, Houston, Texas
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-10">
+          <a class="font-manrope text-sm text-on-surface-variant hover:text-primary transition-colors" href="car.html"
+            >The car</a
+          >
+          <a class="font-manrope text-sm text-on-surface-variant hover:text-primary transition-colors" href="index.html"
+            >Home</a
+          >
+          <a
+            class="font-manrope text-sm text-on-surface-variant hover:text-primary transition-colors"
+            href="sponsorship.html"
+            >Contact</a
+          >
+          <a
+            class="font-manrope text-sm text-on-surface-variant hover:text-primary transition-colors"
+            href="https://instagram.com/ricemotorsportsteam"
+            >Instagram</a
+          >
+        </div>
+        <div class="flex gap-6 mt-8 md:mt-0">
+          <span
+            onclick="window.open('https://www.instagram.com/ricemotorsportsteam/')"
+            class="material-symbols-outlined text-outline hover:text-primary transition-all cursor-pointer"
+            data-icon="share"
+            >share</span
+          >
+          <span
+            href="season.html"
+            class="material-symbols-outlined text-outline hover:text-primary transition-all cursor-pointer"
+            data-icon="campaign"
+            >campaign</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

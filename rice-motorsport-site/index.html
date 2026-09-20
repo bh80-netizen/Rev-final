@@ -1,0 +1,425 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="icon" type="image/png" href="Photos/Thumb_Logo.png" />
+    <title>Rice Motorsports Team | Solar racing at Rice University</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config" src="assets/js/config/index.js"></script>
+    <link rel="stylesheet" href="assets/css/pages/index.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-background text-on-surface font-body selection:bg-primary/30">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface-dim/80 backdrop-blur-xl">
+      <div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
+        <div class="text-2xl font-bold tracking-tighter text-on-surface font-headline">Rice Motorsports Team</div>
+        <div class="hidden md:flex gap-10">
+          <a
+            class="font-headline tracking-tight uppercase text-primary font-bold border-b-2 border-primary pb-1"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            href="car.html"
+            >The Car</a
+          >
+          <a
+            class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            href="sponsorship.html"
+            >Sponsorship</a
+          >
+          <a
+            class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            href="season.html"
+            >Season</a
+          >
+        </div>
+        <a
+          href="mailto:ricemotorsportsteam@gmail.com?subject=Sponsorship%20Inquiry&body=Hi%20Rice%20Motorsports%20Team%2C%0A%0AI%20am%20reaching%20out%20to%20discuss%20a%20potential%20sponsorship%20opportunity%20with%20your%20team%20for%20the%202026%20season.%0A%0AI%20would%20love%20to%20learn%20more%20about%20your%20sponsorship%20packages%20and%20explore%20how%20we%20can%20partner%20together.%0A%0ALooking%20forward%20to%20hearing%20from%20you%2C%0A%5BYour%20Name%5D"
+          class="hidden md:inline-block bg-primary-container text-on-primary-container px-6 py-2.5 font-label text-sm uppercase tracking-widest font-bold hover:bg-primary transition-all duration-300 active:scale-95"
+        >
+          Contact Us
+        </a>
+        <!-- Hamburger button (mobile only) -->
+        <button
+          id="nav-toggle"
+          class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <span class="nav-bar block w-6 h-0.5 bg-on-surface transition-all duration-300"></span>
+          <span class="nav-bar block w-6 h-0.5 bg-on-surface transition-all duration-300"></span>
+          <span class="nav-bar block w-6 h-0.5 bg-on-surface transition-all duration-300"></span>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden flex-col bg-surface-dim/95 backdrop-blur-xl border-t border-outline-variant/20 px-6 py-6 gap-5"
+      >
+        <a
+          class="font-headline tracking-tight uppercase text-primary font-bold border-b border-outline-variant/20 pb-4"
+          href="index.html"
+          >Home</a
+        >
+        <a
+          class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors border-b border-outline-variant/20 pb-4"
+          href="about.html"
+          >About</a
+        >
+        <a
+          class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors border-b border-outline-variant/20 pb-4"
+          href="car.html"
+          >The Car</a
+        >
+        <a
+          class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors border-b border-outline-variant/20 pb-4"
+          href="sponsorship.html"
+          >Sponsorship</a
+        >
+        <a
+          class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors border-b border-outline-variant/20 pb-4"
+          href="season.html"
+          >Season</a
+        >
+        <a
+          href="mailto:ricemotorsportsteam@gmail.com?subject=Sponsorship%20Inquiry&body=Hi%20Rice%20Motorsports%20Team%2C%0A%0AI%20am%20reaching%20out%20to%20discuss%20a%20potential%20sponsorship%20opportunity%20with%20your%20team%20for%20the%202026%20season.%0A%0AI%20would%20love%20to%20learn%20more%20about%20your%20sponsorship%20packages%20and%20explore%20how%20we%20can%20partner%20together.%0A%0ALooking%20forward%20to%20hearing%20from%20you%2C%0A%5BYour%20Name%5D"
+          class="bg-primary-container text-on-primary-container px-6 py-3 font-label text-sm uppercase tracking-widest font-bold text-center hover:bg-primary transition-all duration-300"
+        >
+          Contact Us
+        </a>
+      </div>
+    </nav>
+    <main>
+      <!-- Hero: the car holds centre while the page scrolls past it -->
+      <section class="relative min-h-[190vh] bg-surface-container-lowest">
+        <div class="sticky top-0 h-screen overflow-hidden flex items-center">
+          <div class="absolute inset-0 z-0">
+            <div id="car-viewer" style="width: 100%; height: 100%"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/50 to-transparent"></div>
+          </div>
+          <div class="relative z-10 px-6 md:px-12 w-full max-w-[1920px] mx-auto grid grid-cols-12 gap-6">
+            <div class="col-span-12 lg:col-span-8">
+              <div class="flex items-center gap-4 mb-8">
+                <span class="w-10 h-px bg-primary"></span>
+                <span class="font-label text-primary tracking-[0.25em] uppercase text-[11px]"
+                  >Rice University Solar Vehicle Team</span
+                >
+              </div>
+              <h1 class="font-headline text-6xl md:text-8xl font-bold leading-[0.95] tracking-tight mb-8">
+                1,550 miles.<br />
+                <span class="text-primary-container">On sunlight.</span>
+              </h1>
+              <p class="font-body text-lg md:text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+                <span class="text-on-surface">Carrera</span> is Rice's solar race car — a single-seat carbon-fibre
+                catamaran built by students to cross the country on roughly the power a hair dryer draws.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="car.html"
+                  class="bg-primary-container px-8 py-4 text-on-primary-container font-label text-sm font-bold tracking-widest uppercase hover:bg-primary transition-colors"
+                >
+                  See the car
+                </a>
+                <a
+                  href="about.html"
+                  class="border border-outline-variant/40 px-8 py-4 text-on-surface font-label text-sm font-bold tracking-widest uppercase hover:bg-surface-container-high transition-colors"
+                >
+                  Meet the team
+                </a>
+              </div>
+            </div>
+            <!-- Spec rail -->
+            <div class="hidden lg:flex col-span-4 flex-col justify-end gap-10 pb-16 items-end text-right">
+              <div>
+                <span class="font-label text-primary text-[10px] tracking-[0.2em] uppercase block mb-2">Top speed</span>
+                <span class="font-headline text-4xl font-bold"
+                  >80<span class="text-base opacity-50 ml-1">mph</span></span
+                >
+              </div>
+              <div>
+                <span class="font-label text-primary text-[10px] tracking-[0.2em] uppercase block mb-2"
+                  >Solar array</span
+                >
+                <span class="font-headline text-4xl font-bold">6<span class="text-base opacity-50 ml-1">m²</span></span>
+              </div>
+              <div>
+                <span class="font-label text-primary text-[10px] tracking-[0.2em] uppercase block mb-2">Battery</span>
+                <span class="font-headline text-4xl font-bold"
+                  >5.25<span class="text-base opacity-50 ml-1">kWh</span></span
+                >
+              </div>
+              <div>
+                <span class="font-label text-primary text-[10px] tracking-[0.2em] uppercase block mb-2">Chassis</span>
+                <span class="font-headline text-2xl font-bold leading-tight">Carbon<br />catamaran monocoque</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Partners -->
+      <section class="py-28 bg-surface-container-low overflow-hidden">
+        <div class="px-6 md:px-12 max-w-[1920px] mx-auto mb-12 flex flex-wrap items-end justify-between gap-4">
+          <h2 class="font-headline text-3xl font-bold tracking-tight">Who backs us</h2>
+          <a href="sponsorship.html" class="font-label text-xs uppercase tracking-[0.2em] text-primary hover:underline"
+            >Become a partner</a
+          >
+        </div>
+
+        <div class="sponsor-marquee">
+          <div class="sponsor-track">
+            <div class="sponsor-group">
+              <div class="sponsor-card">
+                <img src="Photos/Logos/Veriten Logo 3000.png" alt="Veriten" class="h-12 w-auto object-contain" />
+              </div>
+              <div class="sponsor-card">
+                <img src="Photos/Logos/PTI.jpg" alt="Pacific Tool" class="h-12 w-auto object-contain" />
+              </div>
+              <div class="sponsor-card">Stephanie &amp; Frank Tsuru</div>
+              <div class="sponsor-card">Your logo here</div>
+            </div>
+            <div class="sponsor-group">
+              <div class="sponsor-card">
+                <img src="Photos/Logos/Veriten Logo 3000.png" alt="Veriten" class="h-12 w-auto object-contain" />
+              </div>
+              <div class="sponsor-card">
+                <img src="Photos/Logos/PTI.jpg" alt="Pacific Tool" class="h-12 w-auto object-contain" />
+              </div>
+              <div class="sponsor-card">Stephanie &amp; Frank Tsuru</div>
+              <div class="sponsor-card">Your logo here</div>
+            </div>
+            <div class="sponsor-group">
+              <div class="sponsor-card">
+                <img src="Photos/Logos/Veriten Logo 3000.png" alt="Veriten" class="h-12 w-auto object-contain" />
+              </div>
+              <div class="sponsor-card">
+                <img src="Photos/Logos/PTI.jpg" alt="Pacific Tool" class="h-12 w-auto object-contain" />
+              </div>
+              <div class="sponsor-card">Stephanie &amp; Frank Tsuru</div>
+              <div class="sponsor-card">Your logo here</div>
+            </div>
+            <div class="sponsor-group">
+              <div class="sponsor-card">
+                <img src="Photos/Logos/Veriten Logo 3000.png" alt="Veriten" class="h-12 w-auto object-contain" />
+              </div>
+              <div class="sponsor-card">
+                <img src="Photos/Logos/PTI.jpg" alt="Pacific Tool" class="h-12 w-auto object-contain" />
+              </div>
+              <div class="sponsor-card">Stephanie &amp; Frank Tsuru</div>
+              <div class="sponsor-card">Your logo here</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- What we're actually building -->
+      <section class="py-32 px-6 md:px-12 max-w-[1920px] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 mb-20">
+          <div class="lg:col-span-5">
+            <span class="font-label text-primary text-[11px] tracking-[0.25em] uppercase block mb-5">Why we do it</span>
+            <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight leading-[1.05]">
+              The car is the excuse.<br />
+              The engineers are the point.
+            </h2>
+          </div>
+          <div class="lg:col-span-7 lg:pt-14">
+            <p class="font-body text-lg text-on-surface-variant leading-relaxed mb-5">
+              A solar car is one of the few undergraduate projects that forces electrical and mechanical engineering to
+              actually meet. The battery pack has to fit a chassis someone else laid up. The motor controller has to
+              survive a road someone else has to drive. Nothing works unless both halves talk.
+            </p>
+            <p class="font-body text-lg text-on-surface-variant leading-relaxed">
+              We build that friction on purpose, and we pair it with a business team that treats fundraising, logistics
+              and sponsor relations as engineering problems of their own. Students leave here having shipped something
+              real — on a deadline, in front of judges, against forty other schools.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-outline-variant/20">
+          <div class="bg-background p-10">
+            <span class="material-symbols-outlined text-primary text-3xl mb-6 block">precision_manufacturing</span>
+            <h3 class="font-headline text-xl font-bold mb-3">Mechanical</h3>
+            <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+              Composite layup for the catamaran monocoque, suspension and steering geometry, braking, and the aeroshell
+              that has to stay under 5.8 m long and still cheat the wind.
+            </p>
+          </div>
+          <div class="bg-background p-10">
+            <span class="material-symbols-outlined text-primary text-3xl mb-6 block">bolt</span>
+            <h3 class="font-headline text-xl font-bold mb-3">Electrical</h3>
+            <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+              A 5.25 kWh pack with its own protection system, maximum power point trackers feeding six square metres of
+              cells, motor control, and the telemetry that tells strategy how much sun we're actually banking.
+            </p>
+          </div>
+          <div class="bg-background p-10">
+            <span class="material-symbols-outlined text-primary text-3xl mb-6 block">groups</span>
+            <h3 class="font-headline text-xl font-bold mb-3">Business &amp; Operations</h3>
+            <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+              Funding the programme, running the chase crew and the race-day logistics, and getting a trailer, a car and
+              fifteen students to a start line a thousand miles away.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- The competition -->
+      <section class="py-24 bg-surface-container-low">
+        <div class="px-6 md:px-12 max-w-[1920px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 relative group overflow-hidden">
+            <img
+              alt="Team members lifting the Carrera solar car's canopy open in the shop"
+              class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
+              src="assets/img/canopy-lift-02.jpg"
+            />
+          </div>
+          <div class="lg:col-span-6">
+            <span class="font-label text-primary text-[11px] tracking-[0.25em] uppercase block mb-5"
+              >The competition</span
+            >
+            <h2 class="font-headline text-3xl md:text-4xl font-bold tracking-tight mb-6 leading-tight">
+              Formula Sun Grand Prix &amp; the American Solar Challenge
+            </h2>
+            <p class="font-body text-on-surface-variant leading-relaxed mb-8">
+              Both events are run by the Innovators Educational Foundation. Formula Sun is three days and twenty-four
+              hours of wheel-to-wheel track racing — and the gate you have to pass through to start the cross-country
+              event. The American Solar Challenge then sends the cars that survive on a multi-day, roughly 1,550-mile
+              run between cities, scored on distance covered under the sun.
+            </p>
+            <dl class="grid grid-cols-2 gap-x-8 gap-y-6 border-t border-outline-variant/20 pt-8">
+              <div>
+                <dt class="font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-2">Our class</dt>
+                <dd class="font-body text-sm text-on-surface">SOV — single driver</dd>
+              </div>
+              <div>
+                <dt class="font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-2">Field</dt>
+                <dd class="font-body text-sm text-on-surface">40+ schools, four countries</dd>
+              </div>
+              <div>
+                <dt class="font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-2">Track format</dt>
+                <dd class="font-body text-sm text-on-surface">3 days · 8 hours a day · most laps</dd>
+              </div>
+              <div>
+                <dt class="font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-2">Road format</dt>
+                <dd class="font-body text-sm text-on-surface">8 days · 4 stages · checkpoints</dd>
+              </div>
+            </dl>
+            <a
+              href="season.html"
+              class="inline-flex items-center gap-2 mt-8 font-label text-xs uppercase tracking-[0.2em] text-primary hover:gap-3 transition-all"
+            >
+              Follow the season
+              <span class="material-symbols-outlined text-base">east</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="mb-40 px-12 max-w-[1920px] mx-auto">
+        <div
+          class="bg-surface-container-lowest border border-outline-variant/20 py-24 text-center relative overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 opacity-5 pointer-events-none"
+            style="
+              background-image: repeating-linear-gradient(
+                45deg,
+                #444653 0,
+                #444653 1px,
+                transparent 0,
+                transparent 20px
+              );
+            "
+          ></div>
+          <h2 class="font-headline text-4xl md:text-6xl font-bold tracking-tight mb-6 relative z-10">
+            Put your name on <span class="text-primary">the array</span>
+          </h2>
+          <p class="font-body text-on-surface-variant max-w-xl mx-auto mb-10 relative z-10 leading-relaxed">
+            Building a solar car takes cells, carbon, machine time and a trailer full of people. If your company wants
+            its logo somewhere genuinely hard to earn, talk to us.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+            <a
+              href="sponsorship.html"
+              class="bg-primary px-10 py-4 text-on-primary font-label text-sm font-bold tracking-widest uppercase hover:bg-primary-fixed transition-colors"
+            >
+              Partner with us
+            </a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfSnPqvyHHyqFGLFzY9vx0FURCidMp_kNM16payr3QcCEci3g/viewform"
+              class="bg-surface-container-highest px-10 py-4 text-on-surface font-label text-sm font-bold tracking-widest uppercase hover:bg-surface-bright transition-colors"
+            >
+              Join the team
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full border-t border-outline-variant/20 bg-surface-container-lowest">
+      <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-[1920px] mx-auto">
+        <div class="mb-8 md:mb-0">
+          <div class="text-xl font-bold text-on-surface font-headline uppercase mb-2">Rice Motorsports Team</div>
+          <p class="font-manrope text-sm text-on-surface-variant tracking-tight">
+            © 2026 Rice Motorsports Team · Rice University, Houston, Texas
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-10">
+          <a class="font-manrope text-sm text-on-surface-variant hover:text-primary transition-colors" href="car.html"
+            >The car</a
+          >
+          <a class="font-manrope text-sm text-on-surface-variant hover:text-primary transition-colors" href="index.html"
+            >Home</a
+          >
+          <a
+            class="font-manrope text-sm text-on-surface-variant hover:text-primary transition-colors"
+            href="sponsorship.html"
+            >Contact</a
+          >
+          <a
+            class="font-manrope text-sm text-on-surface-variant hover:text-primary transition-colors"
+            href="https://instagram.com/ricemotorsportsteam"
+            >Instagram</a
+          >
+        </div>
+        <div class="flex gap-6 mt-8 md:mt-0">
+          <span
+            onclick="window.open('https://www.instagram.com/ricemotorsportsteam/')"
+            class="material-symbols-outlined text-outline hover:text-primary transition-all cursor-pointer"
+            >share</span
+          >
+          <span
+            href="season.html"
+            class="material-symbols-outlined text-outline hover:text-primary transition-all cursor-pointer"
+            >campaign</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/car-viewer.js"></script>
+  </body>
+</html>

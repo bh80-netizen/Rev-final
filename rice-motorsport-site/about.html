@@ -1,0 +1,519 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="icon" type="image/png" href="Photos/Thumb_Logo.png" />
+    <title>About | Rice Motorsports Team</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config" src="assets/js/config/about.js"></script>
+    <link rel="stylesheet" href="assets/css/pages/about.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="bg-background text-on-surface font-body selection:bg-primary/30">
+    <nav class="fixed top-0 w-full z-50 bg-surface-dim/80 backdrop-blur-xl">
+      <div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
+        <div class="text-2xl font-bold tracking-tighter text-on-surface font-headline">Rice Motorsports Team</div>
+        <div class="hidden md:flex gap-10">
+          <a
+            class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="font-headline tracking-tight uppercase text-primary font-bold border-b-2 border-primary pb-1"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            href="car.html"
+            >The Car</a
+          >
+          <a
+            class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            href="sponsorship.html"
+            >Sponsorship</a
+          >
+          <a
+            class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors"
+            href="season.html"
+            >Season</a
+          >
+        </div>
+        <a
+          href="mailto:ricemotorsportsteam@gmail.com?subject=Sponsorship%20Inquiry&body=Hi%20Rice%20Motorsports%20Team%2C%0A%0AI%20am%20reaching%20out%20to%20discuss%20a%20potential%20sponsorship%20opportunity%20with%20your%20team%20for%20the%202026%20season.%0A%0AI%20would%20love%20to%20learn%20more%20about%20your%20sponsorship%20packages%20and%20explore%20how%20we%20can%20partner%20together.%0A%0ALooking%20forward%20to%20hearing%20from%20you%2C%0A%5BYour%20Name%5D"
+          class="hidden md:inline-block bg-primary-container text-on-primary-container px-6 py-2.5 font-label text-sm uppercase tracking-widest font-bold hover:bg-primary transition-all duration-300 active:scale-95"
+        >
+          Contact Us
+        </a>
+        <!-- Hamburger button (mobile only) -->
+        <button
+          id="nav-toggle"
+          class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <span class="nav-bar block w-6 h-0.5 bg-on-surface transition-all duration-300"></span>
+          <span class="nav-bar block w-6 h-0.5 bg-on-surface transition-all duration-300"></span>
+          <span class="nav-bar block w-6 h-0.5 bg-on-surface transition-all duration-300"></span>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden flex-col bg-surface-dim/95 backdrop-blur-xl border-t border-outline-variant/20 px-6 py-6 gap-5"
+      >
+        <a
+          class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors border-b border-outline-variant/20 pb-4"
+          href="index.html"
+          >Home</a
+        >
+        <a
+          class="font-headline tracking-tight uppercase text-primary font-bold border-b border-outline-variant/20 pb-4"
+          href="about.html"
+          >About</a
+        >
+        <a
+          class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors border-b border-outline-variant/20 pb-4"
+          href="car.html"
+          >The Car</a
+        >
+        <a
+          class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors border-b border-outline-variant/20 pb-4"
+          href="sponsorship.html"
+          >Sponsorship</a
+        >
+        <a
+          class="font-headline tracking-tight uppercase text-on-surface-variant hover:text-on-surface transition-colors border-b border-outline-variant/20 pb-4"
+          href="season.html"
+          >Season</a
+        >
+        <a
+          href="mailto:ricemotorsportsteam@gmail.com?subject=Sponsorship%20Inquiry&body=Hi%20Rice%20Motorsports%20Team%2C%0A%0AI%20am%20reaching%20out%20to%20discuss%20a%20potential%20sponsorship%20opportunity%20with%20your%20team%20for%20the%202026%20season.%0A%0AI%20would%20love%20to%20learn%20more%20about%20your%20sponsorship%20packages%20and%20explore%20how%20we%20can%20partner%20together.%0A%0ALooking%20forward%20to%20hearing%20from%20you%2C%0A%5BYour%20Name%5D"
+          class="bg-primary-container text-on-primary-container px-6 py-3 font-label text-sm uppercase tracking-widest font-bold text-center hover:bg-primary transition-all duration-300"
+        >
+          Contact Us
+        </a>
+      </div>
+    </nav>
+    <main class="pt-24 overflow-x-hidden">
+      <!-- Hero Section: Editorial Asymmetry -->
+      <section class="relative min-h-[819px] flex items-center px-12 py-32 bg-surface-dim">
+        <div class="absolute inset-0 z-0">
+          <img
+            class="w-full h-full object-cover opacity-20"
+            alt="The Carrera solar car's canopy open, front three-quarter view in the shop"
+            src="assets/img/car-front-open-01.jpg"
+          />
+        </div>
+        <div class="speed-lines absolute inset-0 pointer-events-none opacity-20 z-10"></div>
+        <div class="grid grid-cols-12 gap-8 w-full max-w-[1920px] mx-auto relative z-10">
+          <div class="col-span-12 lg:col-span-7">
+            <div class="inline-block px-3 py-1 mb-6 border-l-4 border-primary bg-surface-container-high">
+              <span class="font-label text-primary text-[10px] uppercase tracking-[0.3em]">Who we are</span>
+            </div>
+            <h1 class="font-headline text-6xl md:text-7xl font-bold tracking-tight leading-[1.02] text-on-surface mb-8">
+              We build engineers.<br />
+              <span class="text-primary">The car keeps score.</span>
+            </h1>
+          </div>
+          <div class="col-span-12 lg:col-span-5 flex flex-col justify-end">
+            <p class="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed mb-8">
+              Rice Motorsports Team is a student group building a single-seat solar race car for the American Solar
+              Challenge. Electrical, mechanical and business all work on the same deadline, and the car is the thing
+              that tells us whether we got it right.
+            </p>
+            <div class="flex flex-wrap gap-10 border-t border-outline-variant/20 pt-8">
+              <div>
+                <span class="block font-headline text-3xl font-bold">8<span class="text-primary">days</span></span>
+                <span class="font-label text-[10px] uppercase text-on-surface-variant tracking-widest"
+                  >Race length</span
+                >
+              </div>
+              <div>
+                <span class="block font-headline text-3xl font-bold">1,550<span class="text-primary">mi</span></span>
+                <span class="font-label text-[10px] uppercase text-on-surface-variant tracking-widest">Road route</span>
+              </div>
+              <div>
+                <span class="block font-headline text-3xl font-bold">0<span class="text-primary">fuel</span></span>
+                <span class="font-label text-[10px] uppercase text-on-surface-variant tracking-widest">Consumed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Mission: The Laboratory Section -->
+      <section class="bg-surface-container-low py-32 px-12">
+        <div class="max-w-[1920px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+          <div class="relative group">
+            <div
+              class="absolute -top-4 -left-4 w-full h-full border border-primary/20 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"
+            ></div>
+            <img
+              class="relative w-full aspect-video object-cover grayscale brightness-75 transition-all duration-700 group-hover:translate-x-2 group-hover:translate-y-2 group-hover:grayscale-0"
+              alt="Close-up of the carbon-fiber body panel with the Carrera decal"
+              src="assets/img/carrera-decal-closeup.jpg"
+            />
+            <div
+              class="absolute bottom-0 right-0 p-8 glass-panel border-l-2 border-primary transition-all duration-700 group-hover:translate-x-2 group-hover:translate-y-2"
+            >
+              <span class="font-headline text-lg font-bold uppercase tracking-tight"> Est. 2026 | HOUSTON, TX </span>
+            </div>
+          </div>
+          <div>
+            <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-8 leading-tight">
+              Our mission is the people
+            </h2>
+            <p class="font-body text-lg text-on-surface-variant mb-6 leading-relaxed">
+              We exist to turn out electrical and mechanical engineers who have actually built something that had to
+              work in front of judges. Not a class project marked on a rubric — a vehicle that gets inspected,
+              scrutineered and then driven a thousand miles by people who are responsible for it.
+            </p>
+            <p class="font-body text-lg text-on-surface-variant mb-10 leading-relaxed">
+              Behind them sits a business team that is treated as equally technical. Sponsorship, budgeting, logistics
+              and outreach are the reason there is carbon in the shop and a trailer at the start line, and we staff them
+              accordingly.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div class="p-6 bg-surface-container-lowest border-l-2 border-primary">
+                <span class="material-symbols-outlined text-primary mb-4">bolt</span>
+                <h4 class="font-headline font-bold mb-2">Electrical</h4>
+                <p class="font-body text-sm text-on-surface-variant">
+                  Pack, protection, trackers, motor control, telemetry.
+                </p>
+              </div>
+              <div class="p-6 bg-surface-container-lowest border-l-2 border-primary">
+                <span class="material-symbols-outlined text-primary mb-4">precision_manufacturing</span>
+                <h4 class="font-headline font-bold mb-2">Mechanical</h4>
+                <p class="font-body text-sm text-on-surface-variant">
+                  Composites, chassis, suspension, steering, brakes.
+                </p>
+              </div>
+              <div class="p-6 bg-surface-container-lowest border-l-2 border-primary">
+                <span class="material-symbols-outlined text-primary mb-4">groups</span>
+                <h4 class="font-headline font-bold mb-2">Business</h4>
+                <p class="font-body text-sm text-on-surface-variant">
+                  Funding, logistics, partnerships, race-day operations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Bento Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-4 auto-rows-[250px]">
+        <!-- Lead Driver -->
+        <div class="md:col-span-4 md:row-span-2 relative overflow-hidden group">
+          <img
+            class="w-full h-full object-cover object-top grayscale transition-transform duration-700 group-hover:scale-110"
+            src="Photos/LukePhoto.png"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent opacity-80"></div>
+          <div class="absolute bottom-0 p-8">
+            <span class="font-label text-primary text-[10px] uppercase tracking-widest"
+              >Lead Driver & Director of Racing Operations</span
+            >
+            <h3 class="font-headline text-3xl font-bold uppercase tracking-tighter">Luke Mann</h3>
+            <p class="text-on-surface-variant text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+              Junior | Specializes in open wheel racing
+            </p>
+          </div>
+        </div>
+
+        <!-- Muyiwa Ogunsola -->
+        <div class="md:col-span-5 md:row-span-1 bg-surface-container p-8 relative border-r-4 border-primary">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="font-label text-primary text-[10px] uppercase tracking-widest">Commercial Team Lead</span>
+              <h3 class="font-headline text-2xl font-bold uppercase tracking-tighter mt-1">Muyiwa Ogunsola</h3>
+            </div>
+          </div>
+          <p class="mt-4 text-on-surface-variant font-body text-sm leading-relaxed">
+            Leading commercial strategy and outreach for Rice Motorsports Team.
+          </p>
+        </div>
+
+        <!-- Active Members Stat -->
+        <div class="md:col-span-3 md:row-span-1 bg-primary-container p-8 flex flex-col justify-center">
+          <span class="font-headline text-5xl font-bold text-on-primary-container">25</span>
+          <span class="font-label text-xs uppercase tracking-widest mt-2">Active members</span>
+        </div>
+
+        <!-- Mechanical Lead -->
+        <div class="md:col-span-3 md:row-span-1 bg-surface-container-high p-8 flex flex-col justify-between">
+          <div>
+            <span class="font-label text-primary text-[10px] uppercase tracking-widest">Mechanical Lead</span>
+            <h3 class="font-headline text-xl font-bold uppercase tracking-tighter mt-1">Boyan Holt</h3>
+          </div>
+          <span class="font-body text-xs text-on-surface-variant italic"
+            >"When the track becomes wet, it is no longer dry."</span
+          >
+        </div>
+
+        <!-- Sebastian Sandoval -->
+        <div class="md:col-span-5 md:row-span-2 relative overflow-hidden group">
+          <img
+            class="w-full h-full object-cover brightness-50 group-hover:scale-105 transition-transform duration-500"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaVZ5GwzlqKiGBWqr8yjyr1Z4yDU-UkehnsNS1EfuET6lm7Pc7einoOFmvdG38LXxNwX3uzFST3xXowP29Jbrc0FxyF_5C4GITJgsC1vHmvqCRWNbUC60aYwxGzHvBE2ThfLvqpko3f-mCwLeHQx8-j7J4DiH55mgXBv-jkf7AxZyMFn5YYrG8rMCns8qw4AR-qiZ0t7rgJuUVjHfkYkInpEubjjyPilaNAgBoxDEbdUeD9KonMBwJStqEGJYqHnnxluMbXlioCwDn"
+          />
+          <div class="absolute inset-0 p-8 flex flex-col justify-between">
+            <div class="flex justify-between items-start">
+              <span class="font-label text-primary text-[10px] uppercase tracking-widest">Team Principal</span>
+              <span class="material-symbols-outlined text-outline">verified</span>
+            </div>
+            <div>
+              <h3 class="font-headline text-3xl font-bold uppercase tracking-tighter">Sebastian Sandoval</h3>
+              <p class="text-on-surface-variant text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                Overseeing the whole team, ensuring the success and functionality of the team *she's goated*
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ellis Vance - Driver -->
+        <div class="md:col-span-4 md:row-span-1 relative overflow-hidden group">
+          <img
+            class="w-full h-full object-cover object-[center_25%] grayscale transition-transform duration-700 group-hover:scale-110"
+            src="Photos/Ellis(1).png"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent opacity-80"></div>
+          <div class="absolute inset-0 p-8 flex flex-col justify-between">
+            <span class="font-label text-primary text-[10px] uppercase tracking-widest">Driver</span>
+            <div>
+              <h3 class="font-headline text-2xl font-bold uppercase tracking-tighter">Ellis Vance</h3>
+              <p class="text-on-surface-variant text-sm mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                Behind the wheel for Rice Motorsports
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jordan Edmonson - Director of Sponsorships -->
+        <div
+          class="md:col-span-3 md:row-span-1 bg-surface-container p-8 flex flex-col justify-between border-l-2 border-primary"
+        >
+          <div>
+            <span class="font-label text-primary text-[10px] uppercase tracking-widest">Director of Sponsorships</span>
+            <h3 class="font-headline text-xl font-bold uppercase tracking-tighter mt-1">Jordan Edmonson</h3>
+          </div>
+          <span class="font-body text-xs text-on-surface-variant italic"
+            >Building the partnerships that fuel our season.</span
+          >
+        </div>
+      </div>
+      <!-- Technical Specs Strip -->
+      <div
+        class="w-full bg-surface-container-low overflow-hidden whitespace-nowrap py-4 border-y border-outline-variant/10"
+      >
+        <div
+          class="w-full bg-surface-container-low overflow-hidden whitespace-nowrap py-4 border-y border-outline-variant/10 tech-fade"
+        >
+          <div class="tech-track">
+            <div class="tech-group">
+              <span
+                class="font-label text-[10px] uppercase tracking-[0.5em] text-on-surface-variant flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">solar_power</span> Array: 6 m² monocrystalline
+              </span>
+              <span
+                class="font-label text-[10px] uppercase tracking-[0.5em] text-on-surface-variant flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">battery_charging_full</span> Storage: 5.25 kWh
+              </span>
+              <span
+                class="font-label text-[10px] uppercase tracking-[0.5em] text-on-surface-variant flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">straighten</span> Envelope: 5.80 × 2.30 × 1.65 m
+              </span>
+              <span
+                class="font-label text-[10px] uppercase tracking-[0.5em] text-on-surface-variant flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">airlines</span> Chassis: carbon catamaran monocoque
+              </span>
+            </div>
+
+            <div class="tech-group">
+              <span
+                class="font-label text-[10px] uppercase tracking-[0.5em] text-on-surface-variant flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">solar_power</span> Array: 6 m² monocrystalline
+              </span>
+              <span
+                class="font-label text-[10px] uppercase tracking-[0.5em] text-on-surface-variant flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">battery_charging_full</span> Storage: 5.25 kWh
+              </span>
+              <span
+                class="font-label text-[10px] uppercase tracking-[0.5em] text-on-surface-variant flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">straighten</span> Envelope: 5.80 × 2.30 × 1.65 m
+              </span>
+              <span
+                class="font-label text-[10px] uppercase tracking-[0.5em] text-on-surface-variant flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">airlines</span> Chassis: carbon catamaran monocoque
+              </span>
+            </div>
+
+            <div class="tech-group">
+              <span
+                class="font-label text-[10px] uppercase tracking-[0.5em] text-on-surface-variant flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">solar_power</span> Array: 6 m² monocrystalline
+              </span>
+              <span
+                class="font-label text-[10px] uppercase tracking-[0.5em] text-on-surface-variant flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">battery_charging_full</span> Storage: 5.25 kWh
+              </span>
+              <span
+                class="font-label text-[10px] uppercase tracking-[0.5em] text-on-surface-variant flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">straighten</span> Envelope: 5.80 × 2.30 × 1.65 m
+              </span>
+              <span
+                class="font-label text-[10px] uppercase tracking-[0.5em] text-on-surface-variant flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-[14px]">airlines</span> Chassis: carbon catamaran monocoque
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- History Timeline -->
+      <section class="py-32 px-12 bg-surface-dim">
+        <div class="max-w-[1920px] mx-auto">
+          <h2 class="font-headline text-4xl md:text-5xl font-bold mb-20 text-center tracking-tight">How we got here</h2>
+          <div class="space-y-32">
+            <!-- Event 1 -->
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+              <div class="flex-1 text-right order-2 md:order-1">
+                <span class="font-headline text-7xl font-black text-surface-variant/40 block leading-none">2026</span>
+                <h4 class="font-headline text-2xl font-bold mt-4">Founded</h4>
+                <p class="text-on-surface-variant mt-4 max-w-md ml-auto">
+                  A handful of students, a whiteboard and a decision to build a solar car from scratch rather than join
+                  something that already existed.
+                </p>
+              </div>
+              <div class="w-4 h-4 bg-primary shrink-0 relative order-1 md:order-2">
+                <div class="absolute w-[2px] h-32 bg-outline-variant/30 top-full left-1/2 -translate-x-1/2"></div>
+              </div>
+              <div class="flex-1 order-3">
+                <img
+                  class="w-full h-64 object-cover grayscale brightness-50"
+                  alt="Electronics workbench with a breadboard, power supply, and prototyping hardware"
+                  src="assets/img/workbench-electronics.jpg"
+                />
+              </div>
+            </div>
+            <!-- Event 2 -->
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+              <div class="flex-1 order-3 md:order-1">
+                <img
+                  class="w-full h-64 object-cover grayscale brightness-50"
+                  alt="The team posing with a results board showing a 1st place solar prototype finish"
+                  src="assets/img/team-awards-photo.jpg"
+                />
+              </div>
+              <div class="w-4 h-4 bg-primary shrink-0 relative order-2">
+                <div class="absolute w-[2px] h-32 bg-outline-variant/30 top-full left-1/2 -translate-x-1/2"></div>
+              </div>
+              <div class="flex-1 text-left order-1 md:order-3">
+                <span class="font-headline text-7xl font-black text-surface-variant/40 block leading-none">Next</span>
+                <h4 class="font-headline text-2xl font-bold mt-4">Carrera on the grid</h4>
+                <p class="text-on-surface-variant mt-4 max-w-md">
+                  Design reports, build review and scrutineering stand between us and a start line. Clearing them puts a
+                  Rice-built solar car into the Formula Sun Grand Prix and the American Solar Challenge.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="py-32 px-12 bg-primary-container overflow-hidden relative">
+        <div class="speed-lines absolute inset-0 opacity-10"></div>
+        <div class="max-w-[1920px] mx-auto relative z-10 text-center">
+          <h2 class="font-headline text-4xl md:text-6xl font-bold tracking-tight text-on-primary-container mb-4">
+            Come build it with us
+          </h2>
+          <p class="font-body text-on-primary-container/80 max-w-xl mx-auto mb-10">
+            Every major, every year, no experience assumed. The people who end up running sub-teams mostly started by
+            showing up to a build night.
+          </p>
+          <div class="flex flex-wrap justify-center gap-6">
+            <button
+              onclick="
+                window.open(
+                  'https://docs.google.com/forms/d/e/1FAIpQLSfSnPqvyHHyqFGLFzY9vx0FURCidMp_kNM16payr3QcCEci3g/viewform',
+                )
+              "
+              class="bg-surface text-on-surface px-10 py-4 font-headline font-bold uppercase tracking-widest text-sm hover:bg-surface-bright transition-all active:scale-95"
+            >
+              Get Involved
+            </button>
+            <button
+              onclick="window.location.href = 'sponsorship.html'"
+              class="border-2 border-on-primary-container text-on-primary-container px-10 py-4 font-headline font-bold uppercase tracking-widest text-sm hover:bg-on-primary-container hover:text-primary-container transition-all active:scale-95"
+            >
+              Become a Partner
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full border-t border-outline-variant/20 bg-surface-container-lowest">
+      <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-[1920px] mx-auto">
+        <div class="mb-8 md:mb-0">
+          <div class="text-xl font-bold text-on-surface font-headline uppercase mb-2">Rice Motorsports Team</div>
+          <p class="font-manrope text-sm text-on-surface-variant tracking-tight">
+            © 2026 Rice Motorsports Team · Rice University, Houston, Texas
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-10">
+          <a class="font-manrope text-sm text-on-surface-variant hover:text-primary transition-colors" href="car.html"
+            >The car</a
+          >
+          <a class="font-manrope text-sm text-on-surface-variant hover:text-primary transition-colors" href="index.html"
+            >Home</a
+          >
+          <a
+            class="font-manrope text-sm text-on-surface-variant hover:text-primary transition-colors"
+            href="sponsorship.html"
+            >Contact</a
+          >
+          <a
+            class="font-manrope text-sm text-on-surface-variant hover:text-primary transition-colors"
+            href="https://instagram.com/ricemotorsportsteam"
+            >Instagram</a
+          >
+        </div>
+        <div class="flex gap-6 mt-8 md:mt-0">
+          <span
+            onclick="window.open('https://www.instagram.com/ricemotorsportsteam/')"
+            class="material-symbols-outlined text-outline hover:text-primary transition-all cursor-pointer"
+            data-icon="share"
+            >share</span
+          >
+          <span
+            href="season.html"
+            class="material-symbols-outlined text-outline hover:text-primary transition-all cursor-pointer"
+            data-icon="campaign"
+            >campaign</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

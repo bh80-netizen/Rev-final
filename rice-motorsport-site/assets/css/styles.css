@@ -1,0 +1,138 @@
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.glass-panel {
+  background: rgba(30, 31, 38, 0.7);
+  backdrop-filter: blur(20px);
+}
+
+.speed-lines {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(68, 70, 83, 0.1) 10px,
+    rgba(68, 70, 83, 0.1) 11px
+  );
+}
+
+.speed-line {
+  background: linear-gradient(90deg, transparent, rgba(183, 196, 255, 0.1), transparent);
+  height: 1px;
+  width: 100%;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(38, 70, 173, 0.1) 0%, rgba(18, 19, 25, 0.9) 80%);
+}
+
+.diagonal-bg {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 40px,
+    rgba(51, 52, 59, 0.1) 40px,
+    rgba(51, 52, 59, 0.1) 80px
+  );
+}
+
+.sponsor-marquee {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-mask-image: linear-gradient(to right, transparent, white 8%, white 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, white 8%, white 92%, transparent);
+}
+
+.sponsor-track {
+  display: flex;
+  width: max-content;
+  animation: scrollSponsors 40s linear infinite;
+}
+
+.sponsor-group {
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
+  flex-shrink: 0;
+}
+
+.sponsor-card {
+  flex: 0 0 auto;
+  width: 20rem;
+  height: 12rem;
+  background: #0d0e14;
+  border: 1px solid rgba(68, 70, 83, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e909e;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.sponsor-card:hover {
+  filter: grayscale(0%);
+  color: #b7c4ff;
+  transform: translateY(-2px);
+}
+
+@keyframes scrollSponsors {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* TECH SPECS SCROLL */
+
+.tech-track {
+  display: flex;
+  width: max-content;
+  animation: scrollTech 18s linear infinite;
+}
+
+.tech-group {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-shrink: 0;
+  padding-right: 3rem;
+}
+
+@keyframes scrollTech {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.3333%);
+  }
+}
+
+.tech-track:hover {
+  animation-play-state: paused;
+}
+
+.tech-fade {
+  -webkit-mask-image: linear-gradient(to right, transparent, white 8%, white 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, white 8%, white 92%, transparent);
+}

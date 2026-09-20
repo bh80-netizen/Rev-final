@@ -1,0 +1,62 @@
+# MTL file - created by a modified js OBJExporter
+
+newmtl vnut
+Tr 0.45599999999999996
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 0.24353914 0.4467402 0.7254902
+Ke 0.0721901059 0.224254951 0.6384315
+
+newmtl Material_223
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pr 0.41
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 0.140668526 0.161674589 0.462897539
+Ke 0 0 0
+
+newmtl Material_225
+Tr 0.5700000000000001
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 0.0282810461 0.181436628 0.5335689
+Ke 0.182654351 0.335055143 0.544117749
+
+newmtl 00_Assembly_FULL_CAR-PACK_coloriage_v4_Paint___Enamel_Glossy__White_
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 0.964706 0.964706 0.952941
+Ke 0 0 0
+
+newmtl vnesh
+Tr 0.69
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 0.0282810461 0.181436628 0.5335689
+Ke 0.182654351 0.335055143 0.544117749
+
+newmtl 00_Assembly_FULL_CAR-PACK_coloriage_v4_Steel___Satin
+Tr 0.0000
+Tf 1.0000 1.0000 1.0000
+illum 1
+Pds 1
+Pl 1
+Ka 1 1 1
+Kd 0.627451 0.627451 0.627451
+Ke 0 0 0
