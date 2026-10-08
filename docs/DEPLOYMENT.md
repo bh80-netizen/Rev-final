@@ -66,3 +66,21 @@ Use the hosting dashboard's prior successful deployment to restore the old publi
 ## Account actions still required
 
 An authenticated GitHub account with write access is needed to push the branch and create the PR. The hosting teammate must confirm the provider, publish the reviewed branch, and verify Search Console. None of those account/dashboard actions were completed locally.
+
+## Offline GitHub handoff
+
+If the publisher already has an authenticated clone of `bh80-netizen/Rev-final`, send them `REV-publish-ready-20261008.bundle`. In that clone, replace `/path/to/` with the actual bundle location and run:
+
+```sh
+git fetch origin
+git bundle verify /path/to/REV-publish-ready-20261008.bundle
+git fetch /path/to/REV-publish-ready-20261008.bundle publish-ready-20261008:publish-ready-20261008
+git switch publish-ready-20261008
+npm ci
+npm test
+git push -u origin publish-ready-20261008
+```
+
+Open a pull request from `publish-ready-20261008` to `main` in GitHub. Review before merging. The bundle contains the new release commit(s), using public main as its prerequisite, and does not include the local CAD/model experiment history. If that branch name already exists locally, inspect it before fetching; do not overwrite an existing branch blindly.
+
+A complete source ZIP is also provided for a fresh checkout without local dependencies. The standard and Cloudflare Pages deployment ZIPs contain just the generated website. Pick the profile matching the host; GitHub should receive source, not generated dist files.

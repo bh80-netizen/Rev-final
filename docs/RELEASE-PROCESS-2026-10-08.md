@@ -55,3 +55,7 @@ Standard artifact: 67 files, 15268769 bytes, 53 referenced assets. Exact invento
 ## Limits and remaining actions
 
 The website has not been deployed, main has not been merged, and the release branch has not yet been uploaded because this machine has no authenticated GitHub write access. No domain/host settings or Search Console property were changed. The teammate must confirm the host and execute the publication checklist. Local tests do not establish CDN behavior, live Google indexing/ranking, AI responses, field performance, or full accessibility conformance. No Lighthouse score or slow-network measurement is claimed.
+
+### Upload receipt
+
+The prepared branch was committed locally. A dry-run push to `bh80-netizen/Rev-final` failed because Git had no authenticated username/credential; no files were uploaded. An incremental Git bundle and source/deployment ZIPs were prepared for the teammate. See the offline handoff section in DEPLOYMENT.md. The upstream font licenses are preserved verbatim, including their original whitespace. The release diff otherwise passes Git's whitespace check.
