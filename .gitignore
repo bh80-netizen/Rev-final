@@ -31,3 +31,14 @@ Desktop.ini
 # Local tool metadata
 .claude/
 rice-motorsport-site/Photos/REV Photos/Carrera CAD-Renders/Carrera 3D Viewer/www.americansolarchallenge.org.obj
+
+# Generated release previews and temporary manifests
+dist-preview/
+preview-manifest.json
+pnpm-lock.yaml
+preview-validation.json
+
+# Local recoverable export of the previous public source
+deprecate/2026-10-08/release-source-before/
+
+deprecate/generated-releases/

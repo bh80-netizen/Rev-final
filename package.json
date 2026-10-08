@@ -1,24 +1,33 @@
 {
-  "name": "website",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-"scripts": {
-    "start": "serve . -p $PORT"
-},
+  "name": "rev-solar-racing-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Rice Electric Vehicle Solar Racing website",
+  "scripts": {
+    "build": "node tools/build-release.mjs",
+    "build:preview": "node tools/build-release.mjs --preview",
+    "prestart": "npm run build",
+    "start": "node tools/start-release.mjs",
+    "preview": "node tools/start-release.mjs --preview",
+    "test": "node tools/check-all-releases.mjs",
+    "build:cloudflare": "node tools/build-release.mjs --cloudflare-pages"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/InvitationToMid/WEBSITE.git"
+    "url": "git+https://github.com/bh80-netizen/Rev-final.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/InvitationToMid/WEBSITE/issues"
+    "url": "https://github.com/bh80-netizen/Rev-final/issues"
   },
-  "homepage": "https://github.com/InvitationToMid/WEBSITE#readme",
+  "homepage": "https://riceelectricvehicle.org",
   "dependencies": {
     "serve": "^14.2.6"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
