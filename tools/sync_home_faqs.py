@@ -8,7 +8,7 @@ from pathlib import Path
 import re
 
 
-SITE = Path(__file__).resolve().parents[1] / "rice-motorsport-site"
+SITE = Path(__file__).resolve().parents[1] / "rev-site"
 SOURCES = (
     ("Carrera", "car.html", "car-faq"),
     ("Team", "about.html", "team-faq"),

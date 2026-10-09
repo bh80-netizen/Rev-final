@@ -20,8 +20,9 @@ For a staging preview, run `npm run build:preview` then `npm run preview` (port 
 
 ## Files and handoff
 
-- `rice-motorsport-site/`: six active HTML pages and the assets they use.
+- `rev-site/`: six active HTML pages and the assets they use.
 - `tools/`: repeatable packaging, serving, and HTTP checks.
+- [Source folder rename](docs/source-folder-rename-2026-10-09.md): why the source now lives in `rev-site/` and which references were updated.
 - `release-manifest.json`: file inventory and SHA-256 checksums for the standard production build.
 - `release-validation*.json`: results of local release checks.
 - `LICENSES/`: bundled font license notices.

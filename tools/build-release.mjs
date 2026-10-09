@@ -4,7 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const source = path.join(root, 'rice-motorsport-site');
+const source = path.join(root, 'rev-site');
 const preview = process.argv.includes('--preview');
 const cloudflarePages = process.argv.includes('--cloudflare-pages');
 const output = path.join(root, preview ? 'dist-preview' : 'dist');
