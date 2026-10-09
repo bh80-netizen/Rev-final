@@ -1,0 +1,145 @@
+{
+  "cleanUrls": false,
+  "directoryListing": false,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/car",
+      "destination": "/car.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/join",
+      "destination": "/join.html"
+    },
+    {
+      "source": "/sponsorship",
+      "destination": "/sponsorship.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "type": 301
+    },
+    {
+      "source": "/season.html",
+      "destination": "/car",
+      "type": 301
+    },
+    {
+      "source": "/season",
+      "destination": "/car",
+      "type": 301
+    },
+    {
+      "source": "/car.html",
+      "destination": "/car",
+      "type": 301
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about",
+      "type": 301
+    },
+    {
+      "source": "/join.html",
+      "destination": "/join",
+      "type": 301
+    },
+    {
+      "source": "/sponsorship.html",
+      "destination": "/sponsorship",
+      "type": 301
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "type": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "**",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "assets/css/**",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "assets/js/**",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "assets/fonts/**",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "assets/icons/**",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "assets/img/**",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "assets/models/**",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

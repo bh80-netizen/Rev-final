@@ -1,0 +1,115 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+/robots.txt
+  Cache-Control: public, max-age=0, must-revalidate
+/sitemap.xml
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/brand/*
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/docs/*
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/img/site/carrera-workshop.6e203d2bf9f3.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/fonts/lato-regular.d636e4683231.ttf
+  Cache-Control: public, max-age=31536000, immutable
+/assets/fonts/lato-bold.8a0aace75d33.ttf
+  Cache-Control: public, max-age=31536000, immutable
+/assets/fonts/lato-black.808c62839c62.ttf
+  Cache-Control: public, max-age=31536000, immutable
+/assets/fonts/cormorant-garamond-semibold.4fcd2d97820d.ttf
+  Cache-Control: public, max-age=31536000, immutable
+/assets/fonts/cormorant-garamond-semibold-italic.15a0b1826806.ttf
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/site/team-electrical.e76213eae297.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/css/home.321d1360d34a.css
+  Cache-Control: public, max-age=31536000, immutable
+/assets/js/site-nav.e8748b216778.js
+  Cache-Control: public, max-age=31536000, immutable
+/assets/js/sponsors-marquee.74f13d34cb24.js
+  Cache-Control: public, max-age=31536000, immutable
+/assets/models/carrera.0b2a83b775d3.glb
+  Cache-Control: public, max-age=31536000, immutable
+/assets/js/car-viewer.292dd945befe.js
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/site/carrera-model-fallback-transparent-start.868f67e38f23.png
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/site/home-who-electrical-team.a43f046aa08c.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/site/home-who-mechanical-action.2d3172c791ff.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/site/home-who-electrical-action.4f5a94f7ed34.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/icons/instagram.1ba52ca192c5.svg
+  Cache-Control: public, max-age=31536000, immutable
+/assets/icons/linkedin.9b1df2b494bf.svg
+  Cache-Control: public, max-age=31536000, immutable
+/assets/icons/owlnest.e9650cf3c06e.svg
+  Cache-Control: public, max-age=31536000, immutable
+/assets/icons/email.1da93f341081.svg
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/competition/fsgp-color-logo.659fecd77c7b.svg
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/competition/asc-color-logo.7284138e89c4.svg
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/competition/fsgp-track-2023.3ab7d142e5e7.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/sponsors/rice-ece.14cd71e53be2.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/sponsors/rice-engineering-computing.6f9339773ecc.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/sponsors/rice-mechanical-engineering.a9b95a7bc2ac.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/sponsors/rice-engineering-alumni.33a371438890.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/carrera/workshop-open.e6041305b1e5.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/css/site.6bd1bfae803a.css
+  Cache-Control: public, max-age=31536000, immutable
+/assets/css/carrera.d693ba3c2bd2.css
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/site/carrera-side.3d9f366a564d.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/carrera/battery-design-v2.d30ff183a56c.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/carrera/hub-motor-diagram.ca037005b20c.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/carrera/suspension-design.8fe397c313cb.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/carrera/power-distribution-diagram.08b0853b6f3f.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/carrera/telemetry-example.bd5d82087aa7.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/carrera/brainerd-raceway.ff90cc062044.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/css/team.74309f587176.css
+  Cache-Control: public, max-age=31536000, immutable
+/assets/js/team-gallery.fa343b35abcc.js
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/team/elec-action-6.e2cd51e9c977.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/team/mech-action-3.ee020caf4240.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/team/elec-shots-6.f08bfba7cb45.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/team/elec-action-4.d8252ff5ffd1.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/team/elec-shots-1.e60550399c25.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/team/mech-action-1.bb01e040b4a9.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/team/elec-action-2.226fef33643a.webp
+  Cache-Control: public, max-age=31536000, immutable
+/assets/css/join.dbe61682e98a.css
+  Cache-Control: public, max-age=31536000, immutable
+/assets/css/sponsors.c3184d945c55.css
+  Cache-Control: public, max-age=31536000, immutable
+/assets/css/contact.3c688f6ee4cf.css
+  Cache-Control: public, max-age=31536000, immutable
+/assets/js/contact.f28099126bc1.js
+  Cache-Control: public, max-age=31536000, immutable

@@ -1,0 +1,82 @@
+/* Sponsors only: shared styles, homepage, and other pages remain unchanged. */
+@font-face{font-family:Lato;src:url('../fonts/lato-regular.d636e4683231.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:Lato;src:url('../fonts/lato-bold.8a0aace75d33.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:Lato;src:url('../fonts/lato-black.808c62839c62.ttf') format('truetype');font-weight:900;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('../fonts/cormorant-garamond-semibold-italic.15a0b1826806.ttf') format('truetype');font-weight:600;font-style:italic;font-display:swap}
+body[data-page=sponsors]{--rice-blue:#00205b;--rich-blue:#0a509e;--medium-blue:#4d9ad4;--light-blue-gray:#adc7dc;background:#fffdfc;font-family:'Avenir Next',Lato,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+body[data-page=sponsors] .container{width:min(calc(100% - 64px),var(--max))}
+body[data-page=sponsors] h1,body[data-page=sponsors] h2,body[data-page=sponsors] h3{font-weight:900}
+body[data-page=sponsors] h2{font-size:clamp(2rem,3.4vw,3.15rem);line-height:1.08;letter-spacing:-.045em}
+body[data-page=sponsors] h3{font-size:1.6rem;line-height:1.2;letter-spacing:-.035em}
+body[data-page=sponsors] main [id]{scroll-margin-top:112px}
+body[data-page=sponsors] .site-header{color:white;background:rgba(3,11,29,.9);border-bottom:1px solid #ffffff21;box-shadow:0 8px 26px #00000029}
+body[data-page=sponsors] .header-inner{min-height:92px}
+body[data-page=sponsors] .brand{color:white}
+body[data-page=sponsors] .brand img{width:64px;filter:brightness(0) invert(1)}
+body[data-page=sponsors] .brand span{font-size:.68rem;letter-spacing:.1em;line-height:1.2}
+body[data-page=sponsors] .nav-links a,body[data-page=sponsors] .mobile-menu a{color:#d5d9e0;font-size:.73rem;letter-spacing:.1em}
+body[data-page=sponsors] .nav-links a:hover,body[data-page=sponsors] .mobile-menu a:hover{color:white;background:#ffffff17}
+body[data-page=sponsors] [data-nav=sponsors][aria-current=page]{color:#071a3c;background:var(--medium-blue)}
+body[data-page=sponsors] .nav-links .contact-link,body[data-page=sponsors] .mobile-menu .contact-link{color:var(--ink);background:#f4c44e}
+body[data-page=sponsors] .mobile-menu{background:#071a3c;border-color:#ffffff2e}
+body[data-page=sponsors] .button{background:var(--rich-blue);gap:16px;font-family:inherit;letter-spacing:.035em;text-align:center}
+body[data-page=sponsors] .button:hover{background:var(--rice-blue)}
+body[data-page=sponsors] a:focus-visible,body[data-page=sponsors] summary:focus-visible,body[data-page=sponsors] .sponsor-marquee:focus-visible{outline:3px solid var(--medium-blue);outline-offset:5px}
+.sponsors-kicker{font-size:.7rem;font-weight:900;line-height:1.4;letter-spacing:.13em;text-transform:uppercase;color:var(--rich-blue);margin-bottom:18px}
+.sponsors-hero{padding:62px 0 66px;background:#030b1d;color:white}
+.sponsors-hero-layout{display:grid;grid-template-columns:1.35fr 1fr;gap:64px;align-items:center}
+.sponsors-hero .sponsors-kicker{color:var(--light-blue-gray)}
+body[data-page=sponsors] .sponsors-hero h1{font-size:clamp(3rem,4.5vw,4.5rem);line-height:1.04;letter-spacing:-.06em;margin-bottom:26px}
+.sponsors-hero h1 em{font-family:Georgia,'Cormorant Garamond',serif;color:var(--light-blue-gray);font-weight:700;white-space:nowrap}
+.sponsors-intro{font-size:1.03rem;color:#cbd6e4;max-width:60ch;line-height:1.65;margin-bottom:14px}
+.sponsors-text-link{display:inline-flex;align-items:center;gap:18px;color:var(--rich-blue);font-size:.86rem;font-weight:900;text-decoration:none;padding:10px 0}
+.sponsors-text-link:hover{color:var(--rice-blue);text-decoration:underline;text-underline-offset:5px}
+.sponsors-hero .sponsors-text-link{color:white}
+.sponsors-packet{padding:32px;background:#e8f1f7;color:var(--ink);border-top:4px solid var(--medium-blue)}
+.sponsors-packet .sponsors-kicker{color:var(--rich-blue);margin-bottom:22px}
+body[data-page=sponsors] .sponsors-packet h2{font-size:clamp(2rem,3vw,2.8rem);margin-bottom:20px}
+.sponsors-packet>p:not(.sponsors-kicker){font-size:.96rem;color:var(--muted);max-width:40ch}
+.sponsors-packet .button{margin-top:6px}
+.sponsors-packet .sponsors-file-note{font-size:.72rem!important;margin:12px 0 0}
+.sponsors-partners{padding:48px 0 42px}
+.sponsors-section-heading{margin-bottom:30px}
+.sponsors-section-heading .sponsors-kicker{margin-bottom:12px}
+.sponsors-section-heading h2{margin-bottom:0}
+.sponsor-marquee{position:relative;width:100%;overflow:hidden;padding:30px 0;border-block:1px solid var(--line);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+/* Matches homepage travel speed: five partner slots in 40s. */
+.sponsor-track{width:max-content;display:flex;animation:sponsors-scroll 40s linear infinite;animation-play-state:paused}
+.sponsor-marquee.is-visible .sponsor-track{animation-play-state:running}
+.sponsor-marquee:hover .sponsor-track,.sponsor-marquee:focus-within .sponsor-track{animation-play-state:paused}
+.sponsor-group{display:flex;align-items:center;gap:76px;padding-right:76px}
+.sponsor-group img{width:230px;height:96px;object-fit:contain;filter:grayscale(calc(1 - var(--sponsor-color,0)));opacity:calc(.67 + .33 * var(--sponsor-color,0));transition:filter .2s ease,opacity .2s ease}
+.sponsor-group img:hover{filter:grayscale(0);opacity:1}
+.sponsor-name{display:flex;align-items:center;justify-content:center;flex:0 0 auto;width:230px;height:96px;font-size:1.5rem;font-weight:700;white-space:nowrap;color:var(--rich-blue);filter:grayscale(calc(1 - var(--sponsor-color,0)));opacity:calc(.67 + .33 * var(--sponsor-color,0));transition:filter .2s ease,opacity .2s ease}
+.sponsor-name:hover{filter:grayscale(0);opacity:1}
+@keyframes sponsors-scroll{to{transform:translateX(-50%)}}
+.sponsors-support{background:#edf3f7;padding:54px 0 38px;border-block:1px solid var(--line)}
+.sponsors-support-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:42px}
+.sponsors-support-grid article{border-top:2px solid var(--medium-blue);padding-top:22px}
+.sponsors-support-grid .sponsors-kicker{margin-bottom:16px}
+.sponsors-support-grid p:last-child{font-size:.95rem;line-height:1.65;color:var(--muted);margin-bottom:0}
+.sponsors-support-close{display:flex;justify-content:space-between;align-items:center;gap:40px;border-top:1px solid #c8d5df;margin-top:36px;padding-top:20px}
+.sponsors-support-close p{font-size:.9rem;color:var(--muted);max-width:65ch;margin:0}
+.sponsors-support-close a{flex-shrink:0}
+.sponsors-faq{padding:62px 0 70px}
+.sponsors-faq-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+.sponsors-faq-intro>p:not(.sponsors-kicker){font-size:.95rem;color:var(--muted);margin-bottom:4px}
+.sponsors-faq-list details{border-bottom:1px solid #c8d5df}
+.sponsors-faq-list details:first-child{border-top:1px solid #c8d5df}
+.sponsors-faq-list summary{display:flex;justify-content:space-between;align-items:center;gap:20px;cursor:pointer;list-style:none;font-weight:800;font-size:.95rem;line-height:1.45;padding:19px 0}
+.sponsors-faq-list summary::-webkit-details-marker{display:none}
+.sponsors-faq-list summary:after{content:'+';font-size:1.35rem;font-weight:400;color:var(--rich-blue);flex-shrink:0}
+.sponsors-faq-list details[open] summary:after{content:'−'}
+.sponsors-faq-list details p{font-size:.91rem;line-height:1.65;color:var(--muted);padding-right:28px;margin:0 0 20px}
+body[data-page=sponsors] .footer{background:#030b1d;padding-block:44px}
+body[data-page=sponsors] .footer p{font-size:.9rem}
+body[data-page=sponsors] .footer-links{font-size:.85rem}
+@media(max-width:1000px){.sponsors-hero-layout{gap:32px}.sponsors-packet{padding:26px}.sponsors-packet .button{font-size:.75rem;padding-inline:14px}}
+@media(max-width:860px){.sponsor-group{gap:40px;padding-right:40px}.sponsor-group img{width:185px;height:80px}.sponsor-name{width:185px;height:80px;font-size:1.25rem}body[data-page=sponsors] .header-inner{min-height:82px}.sponsors-hero-layout{grid-template-columns:1fr}.sponsors-hero h1{max-width:700px}.sponsors-packet{max-width:560px}.sponsors-support-grid{gap:24px}.sponsors-faq-layout{grid-template-columns:.75fr 1.25fr;gap:36px}}
+@media(max-width:620px){body[data-page=sponsors] .container{width:calc(100% - 36px)}body[data-page=sponsors] .brand span{display:none}body[data-page=sponsors] main [id]{scroll-margin-top:96px}.sponsors-hero{padding:38px 0 40px}body[data-page=sponsors] .sponsors-hero h1{font-size:clamp(2.3rem,9vw,3.6rem);line-height:1.06;letter-spacing:-.05em}.sponsors-intro{font-size:1rem}.sponsors-hero-layout{gap:28px}.sponsors-packet{padding:24px}.sponsors-packet .button{font-size:.75rem}.sponsors-support-grid,.sponsors-faq-layout{grid-template-columns:1fr;gap:26px}.sponsors-partners{padding:36px 0}.sponsors-support{padding:40px 0 30px}.sponsors-support-close{display:block;margin-top:28px}.sponsors-support-close a{margin-top:8px}.sponsors-faq{padding:40px 0 44px}.sponsors-faq-list summary{font-size:.9rem;padding-block:18px}.sponsor-group{gap:40px;padding-right:40px}.sponsor-group img{width:185px;height:80px}.sponsor-name{width:185px;height:80px;font-size:1.25rem}body[data-page=sponsors] .footer{padding-block:36px}}
+/* Keep all logos readable without scripts or animation; users can scroll this row. */
+@media(scripting:none){.sponsor-marquee{overflow-x:auto;mask-image:none}.sponsor-track{animation:none}.sponsor-group[aria-hidden=true]{display:none}}
+@media(prefers-reduced-motion:reduce){.sponsor-marquee{overflow-x:auto;mask-image:none}.sponsor-track{animation:none}.sponsor-group[aria-hidden=true]{display:none}.sponsor-group img,.sponsor-name{transition:none}}

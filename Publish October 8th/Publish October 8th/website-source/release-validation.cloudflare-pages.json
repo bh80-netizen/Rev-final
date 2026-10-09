@@ -1,0 +1,14 @@
+{
+  "mode": "production",
+  "hostingProfile": "cloudflare-pages",
+  "fileCount": 67,
+  "bytes": 15268229,
+  "checks": [
+    "Artifact hashes match; originals, source CAD, archives and private/runtime files excluded.",
+    "Six page titles/descriptions, canonicals, JSON-LD, alt text, IDs, timeline and sitemap validated.",
+    "Approved title/description and Coming soon application strategy preserved.",
+    "All built local links, images, model references and linked fragments resolve.",
+    "Fingerprinted CSS font/background references resolve.",
+    "Production server: page/asset responses, redirects, true 404s, directory isolation, headers, model caching/304 and PDF MIME passed."
+  ]
+}

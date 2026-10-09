@@ -1,0 +1,723 @@
+{
+  "mode": "production",
+  "hostingProfile": "standard",
+  "pages": [
+    "index.html",
+    "car.html",
+    "about.html",
+    "join.html",
+    "sponsorship.html",
+    "contact.html"
+  ],
+  "bytes": 15268769,
+  "assets": [
+    {
+      "source": "assets/brand/favicon.svg",
+      "output": "assets/brand/favicon.svg",
+      "bytes": 1466,
+      "sha256": "d64843ce585fbcf98d6eadb82b0aad7a2e5a9410a8e2611e60d62a7a8f7ccf50",
+      "immutable": false
+    },
+    {
+      "source": "assets/brand/rev-mark.svg",
+      "output": "assets/brand/rev-mark.svg",
+      "bytes": 1336,
+      "sha256": "62f6c2080c1c35e4f6cf76ed2ffd29b030b442c1ecaad68f669731d9dddaf516",
+      "immutable": false
+    },
+    {
+      "source": "assets/css/carrera.css",
+      "output": "assets/css/carrera.d693ba3c2bd2.css",
+      "bytes": 18613,
+      "sha256": "d693ba3c2bd24bac9894cf02d457a29c5657fc7e8dcca9b97ead137c7eac13a1",
+      "immutable": true
+    },
+    {
+      "source": "assets/css/contact.css",
+      "output": "assets/css/contact.3c688f6ee4cf.css",
+      "bytes": 7999,
+      "sha256": "3c688f6ee4cf4ab2053ede8f6512eeb75d96c7f2ec20ba7a94a9009e01d65167",
+      "immutable": true
+    },
+    {
+      "source": "assets/css/home.css",
+      "output": "assets/css/home.321d1360d34a.css",
+      "bytes": 25453,
+      "sha256": "321d1360d34ae684ae221dbf20986c11cc1efc4e2f694568f363cfa374e68eb2",
+      "immutable": true
+    },
+    {
+      "source": "assets/css/join.css",
+      "output": "assets/css/join.dbe61682e98a.css",
+      "bytes": 7869,
+      "sha256": "dbe61682e98a7412fb3eeacdb6deaf60bf0d87f98daaeeb19d8283c9619301ff",
+      "immutable": true
+    },
+    {
+      "source": "assets/css/site.css",
+      "output": "assets/css/site.6bd1bfae803a.css",
+      "bytes": 10829,
+      "sha256": "6bd1bfae803a706af6bbd49d769fa5294aec8ae3a7e451d3cc10929b8557288f",
+      "immutable": true
+    },
+    {
+      "source": "assets/css/sponsors.css",
+      "output": "assets/css/sponsors.c3184d945c55.css",
+      "bytes": 9644,
+      "sha256": "c3184d945c55efedda353cfbcb33ed6bb382fdbe8dbcf4f3a9635773953baec7",
+      "immutable": true
+    },
+    {
+      "source": "assets/css/team.css",
+      "output": "assets/css/team.74309f587176.css",
+      "bytes": 9041,
+      "sha256": "74309f587176b8b6759fd4b23fb1f964b8ecee42f24e2e078872e7e7e3763b30",
+      "immutable": true
+    },
+    {
+      "source": "assets/docs/REV-Sponsorship-Packet-2027.pdf",
+      "output": "assets/docs/REV-Sponsorship-Packet-2027.pdf",
+      "bytes": 2203342,
+      "sha256": "cd06dca7963c20bc8ea6f3917cd648fe715a2251a9ab834ca0551a12c161ba0b",
+      "immutable": false
+    },
+    {
+      "source": "assets/fonts/cormorant-garamond-semibold-italic.ttf",
+      "output": "assets/fonts/cormorant-garamond-semibold-italic.15a0b1826806.ttf",
+      "bytes": 619608,
+      "sha256": "15a0b18268068ed47d2c920671c1cca6637226af132797f3e52716162fe14b6a",
+      "immutable": true
+    },
+    {
+      "source": "assets/fonts/cormorant-garamond-semibold.ttf",
+      "output": "assets/fonts/cormorant-garamond-semibold.4fcd2d97820d.ttf",
+      "bytes": 891380,
+      "sha256": "4fcd2d97820dac2be5f9c24d7fbd264a08f89b16a0d12fcc80541b3fbd44ee92",
+      "immutable": true
+    },
+    {
+      "source": "assets/fonts/lato-black.ttf",
+      "output": "assets/fonts/lato-black.808c62839c62.ttf",
+      "bytes": 664748,
+      "sha256": "808c62839c62dbce7de689af7603666fc7f8b81e0df537d8a5212c87580d4337",
+      "immutable": true
+    },
+    {
+      "source": "assets/fonts/lato-bold.ttf",
+      "output": "assets/fonts/lato-bold.8a0aace75d33.ttf",
+      "bytes": 656544,
+      "sha256": "8a0aace75d33794eece4b28187bfc1df0bbd2888b5d8a56e01788c8d65d16be1",
+      "immutable": true
+    },
+    {
+      "source": "assets/fonts/lato-regular.ttf",
+      "output": "assets/fonts/lato-regular.d636e4683231.ttf",
+      "bytes": 656568,
+      "sha256": "d636e4683231f931eda222d588e944d082bfd3bdba02f928bee461c0f185b251",
+      "immutable": true
+    },
+    {
+      "source": "assets/icons/email.svg",
+      "output": "assets/icons/email.1da93f341081.svg",
+      "bytes": 248,
+      "sha256": "1da93f3410816fb29264adee173b3b585f2b78660538f8e21d854648b9c8edf8",
+      "immutable": true
+    },
+    {
+      "source": "assets/icons/instagram.svg",
+      "output": "assets/icons/instagram.1ba52ca192c5.svg",
+      "bytes": 321,
+      "sha256": "1ba52ca192c5655ab3026f1c209d1e924638e303543849c31c6c7985fce2cd39",
+      "immutable": true
+    },
+    {
+      "source": "assets/icons/linkedin.svg",
+      "output": "assets/icons/linkedin.9b1df2b494bf.svg",
+      "bytes": 396,
+      "sha256": "9b1df2b494bf6e1a34cf9560b7cd6fa72610538e8f8de98b445b58870a34af37",
+      "immutable": true
+    },
+    {
+      "source": "assets/icons/owlnest.svg",
+      "output": "assets/icons/owlnest.e9650cf3c06e.svg",
+      "bytes": 429,
+      "sha256": "e9650cf3c06e429c0b808d291732f2486bf1063f7a9f03f433cc832996b3dc33",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/carrera/battery-design-v2.webp",
+      "output": "assets/img/carrera/battery-design-v2.d30ff183a56c.webp",
+      "bytes": 88002,
+      "sha256": "d30ff183a56c3568d2dae6db116f1bb53c00863c95595bb0eafe569694675cb4",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/carrera/brainerd-raceway.webp",
+      "output": "assets/img/carrera/brainerd-raceway.ff90cc062044.webp",
+      "bytes": 177258,
+      "sha256": "ff90cc062044f37b2e968265160f81d0d1a36188fe061c8972c1549ea0d758ca",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/carrera/hub-motor-diagram.webp",
+      "output": "assets/img/carrera/hub-motor-diagram.ca037005b20c.webp",
+      "bytes": 71526,
+      "sha256": "ca037005b20c8277f69dcaef476f8a527e52f4813c954a19573ee314fc2726c7",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/carrera/power-distribution-diagram.webp",
+      "output": "assets/img/carrera/power-distribution-diagram.08b0853b6f3f.webp",
+      "bytes": 62224,
+      "sha256": "08b0853b6f3fb2403337953c626b5ce7a0f257179b1ac3c06afbfaadd970948b",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/carrera/suspension-design.webp",
+      "output": "assets/img/carrera/suspension-design.8fe397c313cb.webp",
+      "bytes": 60492,
+      "sha256": "8fe397c313cb8322a41b3eab9fa86fb08430541b26bab8ed698907a16b742012",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/carrera/telemetry-example.webp",
+      "output": "assets/img/carrera/telemetry-example.bd5d82087aa7.webp",
+      "bytes": 88886,
+      "sha256": "bd5d82087aa76e8e29359b60c911efef6481626b5580503c4dea910c6689c548",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/carrera/workshop-open.webp",
+      "output": "assets/img/carrera/workshop-open.e6041305b1e5.webp",
+      "bytes": 210200,
+      "sha256": "e6041305b1e52b944a6c8368c877425eada6fa7dffdbf3fc087de9c6725eb88d",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/competition/asc-color-logo.svg",
+      "output": "assets/img/competition/asc-color-logo.7284138e89c4.svg",
+      "bytes": 28402,
+      "sha256": "7284138e89c46c46423ce70548eaf37909865fe9f0c65c9e61681b4b00e7d4b8",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/competition/fsgp-color-logo.svg",
+      "output": "assets/img/competition/fsgp-color-logo.659fecd77c7b.svg",
+      "bytes": 14649,
+      "sha256": "659fecd77c7b090c9cc98fbd91f0a22493bc23051cd4254711faecced63b0bc4",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/competition/fsgp-track-2023.webp",
+      "output": "assets/img/competition/fsgp-track-2023.3ab7d142e5e7.webp",
+      "bytes": 118776,
+      "sha256": "3ab7d142e5e7c80431164d309559233a900e79062e148b68aad35f3050ab3894",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/site/carrera-model-fallback-transparent-start.png",
+      "output": "assets/img/site/carrera-model-fallback-transparent-start.868f67e38f23.png",
+      "bytes": 502392,
+      "sha256": "868f67e38f23d21ecc8e4e24efe6dc46db1d554b5d844ded6e6f4554f1c2caee",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/site/carrera-side.webp",
+      "output": "assets/img/site/carrera-side.3d9f366a564d.webp",
+      "bytes": 101644,
+      "sha256": "3d9f366a564d34730d2c2e9ae7d77d45e9286d00bbcce5f7896f77d404fad490",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/site/carrera-workshop.webp",
+      "output": "assets/img/site/carrera-workshop.6e203d2bf9f3.webp",
+      "bytes": 237232,
+      "sha256": "6e203d2bf9f354f32f9c9db86059dd3adacdffbe0afea6859d771b9a2c437f07",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/site/home-who-electrical-action.webp",
+      "output": "assets/img/site/home-who-electrical-action.4f5a94f7ed34.webp",
+      "bytes": 140180,
+      "sha256": "4f5a94f7ed3471809d5192c7989937d437ff6312092a2387c235e8b1095eb6bc",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/site/home-who-electrical-team.webp",
+      "output": "assets/img/site/home-who-electrical-team.a43f046aa08c.webp",
+      "bytes": 109142,
+      "sha256": "a43f046aa08c2510839bba3794e77d66e94daef39cc16aabc485d4274ea2e1ff",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/site/home-who-mechanical-action.webp",
+      "output": "assets/img/site/home-who-mechanical-action.2d3172c791ff.webp",
+      "bytes": 175174,
+      "sha256": "2d3172c791ffab6e2688d145602fb89da7dd7b2bd2b8cc46003571d68c760eeb",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/site/team-electrical.webp",
+      "output": "assets/img/site/team-electrical.e76213eae297.webp",
+      "bytes": 51312,
+      "sha256": "e76213eae2970e6c760284857130e652155b00a8250357e0271f1b3a419168fc",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/sponsors/rice-ece.webp",
+      "output": "assets/img/sponsors/rice-ece.14cd71e53be2.webp",
+      "bytes": 48888,
+      "sha256": "14cd71e53be2818d204319b2dd309fb7e808d8a9706afd51eb4af3cb1d489220",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/sponsors/rice-engineering-alumni.webp",
+      "output": "assets/img/sponsors/rice-engineering-alumni.33a371438890.webp",
+      "bytes": 21450,
+      "sha256": "33a371438890d229cf458c64160a224f326943b035592241e3c1a382e8fd4cf4",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/sponsors/rice-engineering-computing.webp",
+      "output": "assets/img/sponsors/rice-engineering-computing.6f9339773ecc.webp",
+      "bytes": 19332,
+      "sha256": "6f9339773eccc1bcda5e349f8a5152f8a6e8f9313871a992db0ea0a076880ec3",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/sponsors/rice-mechanical-engineering.webp",
+      "output": "assets/img/sponsors/rice-mechanical-engineering.a9b95a7bc2ac.webp",
+      "bytes": 29626,
+      "sha256": "a9b95a7bc2ac09624afc8666469ae379abe532a83743051d7ce851f0ec116c36",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/team/elec-action-2.webp",
+      "output": "assets/img/team/elec-action-2.226fef33643a.webp",
+      "bytes": 108984,
+      "sha256": "226fef33643a75942181f7255f2a015709497397e9229b50b2df3ab1dd6ea473",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/team/elec-action-4.webp",
+      "output": "assets/img/team/elec-action-4.d8252ff5ffd1.webp",
+      "bytes": 36844,
+      "sha256": "d8252ff5ffd146e5219bc2b70f5ecc05f25a733c7b6e3a8a6b777385f0530bd4",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/team/elec-action-6.webp",
+      "output": "assets/img/team/elec-action-6.e2cd51e9c977.webp",
+      "bytes": 108778,
+      "sha256": "e2cd51e9c977db66ca0e837777de7e536df8e52bfeb15b127b5422775d03a130",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/team/elec-shots-1.webp",
+      "output": "assets/img/team/elec-shots-1.e60550399c25.webp",
+      "bytes": 66016,
+      "sha256": "e60550399c2571466306a587bb40dc1728e0cd39fbf301c364ccb29d8859e267",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/team/elec-shots-6.webp",
+      "output": "assets/img/team/elec-shots-6.f08bfba7cb45.webp",
+      "bytes": 85794,
+      "sha256": "f08bfba7cb4505a401093888b37d48045fb666c700d08195c8ac7c0599cacbd0",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/team/mech-action-1.webp",
+      "output": "assets/img/team/mech-action-1.bb01e040b4a9.webp",
+      "bytes": 70516,
+      "sha256": "bb01e040b4a935d5691083bdf844fecf0e237e0595dff79e4f613138395b7b51",
+      "immutable": true
+    },
+    {
+      "source": "assets/img/team/mech-action-3.webp",
+      "output": "assets/img/team/mech-action-3.ee020caf4240.webp",
+      "bytes": 124014,
+      "sha256": "ee020caf4240f9c3a1e76bfc1f6c832308d37e0abc3a5a3202cce224c87e26ba",
+      "immutable": true
+    },
+    {
+      "source": "assets/js/car-viewer.js",
+      "output": "assets/js/car-viewer.292dd945befe.js",
+      "bytes": 11295,
+      "sha256": "292dd945befe502dad409f8aa359e0a6ad0a9e50d7b819979eb5a882574f21fa",
+      "immutable": true
+    },
+    {
+      "source": "assets/js/contact.js",
+      "output": "assets/js/contact.f28099126bc1.js",
+      "bytes": 1192,
+      "sha256": "f28099126bc13a34087f01f08e00ffd60ce4fa191690926b99fd0973096cf3d4",
+      "immutable": true
+    },
+    {
+      "source": "assets/js/site-nav.js",
+      "output": "assets/js/site-nav.e8748b216778.js",
+      "bytes": 2416,
+      "sha256": "e8748b2167786f4fde72a54a3a5267c439b5f0aa2c9b15f699b4b5bf44d862ca",
+      "immutable": true
+    },
+    {
+      "source": "assets/js/sponsors-marquee.js",
+      "output": "assets/js/sponsors-marquee.74f13d34cb24.js",
+      "bytes": 2437,
+      "sha256": "74f13d34cb2421bad5e3b853f1622c6f57338f745dfb2cc03bfe550d86ac756c",
+      "immutable": true
+    },
+    {
+      "source": "assets/js/team-gallery.js",
+      "output": "assets/js/team-gallery.fa343b35abcc.js",
+      "bytes": 825,
+      "sha256": "fa343b35abccce170e53e3738ff1c0c05e854cb3fde8fff574b6689301780fe0",
+      "immutable": true
+    },
+    {
+      "source": "assets/models/carrera.glb",
+      "output": "assets/models/carrera.0b2a83b775d3.glb",
+      "bytes": 6389772,
+      "sha256": "0b2a83b775d304a37c2e79606182b702824eba18ea46c267910b3a22152b2b03",
+      "immutable": true
+    }
+  ],
+  "files": [
+    {
+      "path": "_headers",
+      "bytes": 5568,
+      "sha256": "acfc8db401256fc78493da2f63ee8573efffaa73fc1c39baa4095649523444d8"
+    },
+    {
+      "path": "_redirects",
+      "bytes": 67,
+      "sha256": "6d5662e23c46b23bc57c794109d59ea83be2bbeeee9058d5d3408e1f42360017"
+    },
+    {
+      "path": "404.html",
+      "bytes": 717,
+      "sha256": "e95689bab4444c74e1178f80586d0123a20e9d241069850bf823ea45bac19a96"
+    },
+    {
+      "path": "about.html",
+      "bytes": 15017,
+      "sha256": "32c1eeb2abf1ca89faf23d20c7c05172ac09587e4a7d7cf43817584f335a7b69"
+    },
+    {
+      "path": "assets/brand/favicon.svg",
+      "bytes": 1466,
+      "sha256": "d64843ce585fbcf98d6eadb82b0aad7a2e5a9410a8e2611e60d62a7a8f7ccf50"
+    },
+    {
+      "path": "assets/brand/rev-mark.svg",
+      "bytes": 1336,
+      "sha256": "62f6c2080c1c35e4f6cf76ed2ffd29b030b442c1ecaad68f669731d9dddaf516"
+    },
+    {
+      "path": "assets/css/carrera.d693ba3c2bd2.css",
+      "bytes": 18613,
+      "sha256": "d693ba3c2bd24bac9894cf02d457a29c5657fc7e8dcca9b97ead137c7eac13a1"
+    },
+    {
+      "path": "assets/css/contact.3c688f6ee4cf.css",
+      "bytes": 7999,
+      "sha256": "3c688f6ee4cf4ab2053ede8f6512eeb75d96c7f2ec20ba7a94a9009e01d65167"
+    },
+    {
+      "path": "assets/css/home.321d1360d34a.css",
+      "bytes": 25453,
+      "sha256": "321d1360d34ae684ae221dbf20986c11cc1efc4e2f694568f363cfa374e68eb2"
+    },
+    {
+      "path": "assets/css/join.dbe61682e98a.css",
+      "bytes": 7869,
+      "sha256": "dbe61682e98a7412fb3eeacdb6deaf60bf0d87f98daaeeb19d8283c9619301ff"
+    },
+    {
+      "path": "assets/css/site.6bd1bfae803a.css",
+      "bytes": 10829,
+      "sha256": "6bd1bfae803a706af6bbd49d769fa5294aec8ae3a7e451d3cc10929b8557288f"
+    },
+    {
+      "path": "assets/css/sponsors.c3184d945c55.css",
+      "bytes": 9644,
+      "sha256": "c3184d945c55efedda353cfbcb33ed6bb382fdbe8dbcf4f3a9635773953baec7"
+    },
+    {
+      "path": "assets/css/team.74309f587176.css",
+      "bytes": 9041,
+      "sha256": "74309f587176b8b6759fd4b23fb1f964b8ecee42f24e2e078872e7e7e3763b30"
+    },
+    {
+      "path": "assets/docs/REV-Sponsorship-Packet-2027.pdf",
+      "bytes": 2203342,
+      "sha256": "cd06dca7963c20bc8ea6f3917cd648fe715a2251a9ab834ca0551a12c161ba0b"
+    },
+    {
+      "path": "assets/fonts/cormorant-garamond-semibold-italic.15a0b1826806.ttf",
+      "bytes": 619608,
+      "sha256": "15a0b18268068ed47d2c920671c1cca6637226af132797f3e52716162fe14b6a"
+    },
+    {
+      "path": "assets/fonts/cormorant-garamond-semibold.4fcd2d97820d.ttf",
+      "bytes": 891380,
+      "sha256": "4fcd2d97820dac2be5f9c24d7fbd264a08f89b16a0d12fcc80541b3fbd44ee92"
+    },
+    {
+      "path": "assets/fonts/lato-black.808c62839c62.ttf",
+      "bytes": 664748,
+      "sha256": "808c62839c62dbce7de689af7603666fc7f8b81e0df537d8a5212c87580d4337"
+    },
+    {
+      "path": "assets/fonts/lato-bold.8a0aace75d33.ttf",
+      "bytes": 656544,
+      "sha256": "8a0aace75d33794eece4b28187bfc1df0bbd2888b5d8a56e01788c8d65d16be1"
+    },
+    {
+      "path": "assets/fonts/lato-regular.d636e4683231.ttf",
+      "bytes": 656568,
+      "sha256": "d636e4683231f931eda222d588e944d082bfd3bdba02f928bee461c0f185b251"
+    },
+    {
+      "path": "assets/icons/email.1da93f341081.svg",
+      "bytes": 248,
+      "sha256": "1da93f3410816fb29264adee173b3b585f2b78660538f8e21d854648b9c8edf8"
+    },
+    {
+      "path": "assets/icons/instagram.1ba52ca192c5.svg",
+      "bytes": 321,
+      "sha256": "1ba52ca192c5655ab3026f1c209d1e924638e303543849c31c6c7985fce2cd39"
+    },
+    {
+      "path": "assets/icons/linkedin.9b1df2b494bf.svg",
+      "bytes": 396,
+      "sha256": "9b1df2b494bf6e1a34cf9560b7cd6fa72610538e8f8de98b445b58870a34af37"
+    },
+    {
+      "path": "assets/icons/owlnest.e9650cf3c06e.svg",
+      "bytes": 429,
+      "sha256": "e9650cf3c06e429c0b808d291732f2486bf1063f7a9f03f433cc832996b3dc33"
+    },
+    {
+      "path": "assets/img/carrera/battery-design-v2.d30ff183a56c.webp",
+      "bytes": 88002,
+      "sha256": "d30ff183a56c3568d2dae6db116f1bb53c00863c95595bb0eafe569694675cb4"
+    },
+    {
+      "path": "assets/img/carrera/brainerd-raceway.ff90cc062044.webp",
+      "bytes": 177258,
+      "sha256": "ff90cc062044f37b2e968265160f81d0d1a36188fe061c8972c1549ea0d758ca"
+    },
+    {
+      "path": "assets/img/carrera/hub-motor-diagram.ca037005b20c.webp",
+      "bytes": 71526,
+      "sha256": "ca037005b20c8277f69dcaef476f8a527e52f4813c954a19573ee314fc2726c7"
+    },
+    {
+      "path": "assets/img/carrera/power-distribution-diagram.08b0853b6f3f.webp",
+      "bytes": 62224,
+      "sha256": "08b0853b6f3fb2403337953c626b5ce7a0f257179b1ac3c06afbfaadd970948b"
+    },
+    {
+      "path": "assets/img/carrera/suspension-design.8fe397c313cb.webp",
+      "bytes": 60492,
+      "sha256": "8fe397c313cb8322a41b3eab9fa86fb08430541b26bab8ed698907a16b742012"
+    },
+    {
+      "path": "assets/img/carrera/telemetry-example.bd5d82087aa7.webp",
+      "bytes": 88886,
+      "sha256": "bd5d82087aa76e8e29359b60c911efef6481626b5580503c4dea910c6689c548"
+    },
+    {
+      "path": "assets/img/carrera/workshop-open.e6041305b1e5.webp",
+      "bytes": 210200,
+      "sha256": "e6041305b1e52b944a6c8368c877425eada6fa7dffdbf3fc087de9c6725eb88d"
+    },
+    {
+      "path": "assets/img/competition/asc-color-logo.7284138e89c4.svg",
+      "bytes": 28402,
+      "sha256": "7284138e89c46c46423ce70548eaf37909865fe9f0c65c9e61681b4b00e7d4b8"
+    },
+    {
+      "path": "assets/img/competition/fsgp-color-logo.659fecd77c7b.svg",
+      "bytes": 14649,
+      "sha256": "659fecd77c7b090c9cc98fbd91f0a22493bc23051cd4254711faecced63b0bc4"
+    },
+    {
+      "path": "assets/img/competition/fsgp-track-2023.3ab7d142e5e7.webp",
+      "bytes": 118776,
+      "sha256": "3ab7d142e5e7c80431164d309559233a900e79062e148b68aad35f3050ab3894"
+    },
+    {
+      "path": "assets/img/site/carrera-model-fallback-transparent-start.868f67e38f23.png",
+      "bytes": 502392,
+      "sha256": "868f67e38f23d21ecc8e4e24efe6dc46db1d554b5d844ded6e6f4554f1c2caee"
+    },
+    {
+      "path": "assets/img/site/carrera-side.3d9f366a564d.webp",
+      "bytes": 101644,
+      "sha256": "3d9f366a564d34730d2c2e9ae7d77d45e9286d00bbcce5f7896f77d404fad490"
+    },
+    {
+      "path": "assets/img/site/carrera-workshop.6e203d2bf9f3.webp",
+      "bytes": 237232,
+      "sha256": "6e203d2bf9f354f32f9c9db86059dd3adacdffbe0afea6859d771b9a2c437f07"
+    },
+    {
+      "path": "assets/img/site/home-who-electrical-action.4f5a94f7ed34.webp",
+      "bytes": 140180,
+      "sha256": "4f5a94f7ed3471809d5192c7989937d437ff6312092a2387c235e8b1095eb6bc"
+    },
+    {
+      "path": "assets/img/site/home-who-electrical-team.a43f046aa08c.webp",
+      "bytes": 109142,
+      "sha256": "a43f046aa08c2510839bba3794e77d66e94daef39cc16aabc485d4274ea2e1ff"
+    },
+    {
+      "path": "assets/img/site/home-who-mechanical-action.2d3172c791ff.webp",
+      "bytes": 175174,
+      "sha256": "2d3172c791ffab6e2688d145602fb89da7dd7b2bd2b8cc46003571d68c760eeb"
+    },
+    {
+      "path": "assets/img/site/team-electrical.e76213eae297.webp",
+      "bytes": 51312,
+      "sha256": "e76213eae2970e6c760284857130e652155b00a8250357e0271f1b3a419168fc"
+    },
+    {
+      "path": "assets/img/sponsors/rice-ece.14cd71e53be2.webp",
+      "bytes": 48888,
+      "sha256": "14cd71e53be2818d204319b2dd309fb7e808d8a9706afd51eb4af3cb1d489220"
+    },
+    {
+      "path": "assets/img/sponsors/rice-engineering-alumni.33a371438890.webp",
+      "bytes": 21450,
+      "sha256": "33a371438890d229cf458c64160a224f326943b035592241e3c1a382e8fd4cf4"
+    },
+    {
+      "path": "assets/img/sponsors/rice-engineering-computing.6f9339773ecc.webp",
+      "bytes": 19332,
+      "sha256": "6f9339773eccc1bcda5e349f8a5152f8a6e8f9313871a992db0ea0a076880ec3"
+    },
+    {
+      "path": "assets/img/sponsors/rice-mechanical-engineering.a9b95a7bc2ac.webp",
+      "bytes": 29626,
+      "sha256": "a9b95a7bc2ac09624afc8666469ae379abe532a83743051d7ce851f0ec116c36"
+    },
+    {
+      "path": "assets/img/team/elec-action-2.226fef33643a.webp",
+      "bytes": 108984,
+      "sha256": "226fef33643a75942181f7255f2a015709497397e9229b50b2df3ab1dd6ea473"
+    },
+    {
+      "path": "assets/img/team/elec-action-4.d8252ff5ffd1.webp",
+      "bytes": 36844,
+      "sha256": "d8252ff5ffd146e5219bc2b70f5ecc05f25a733c7b6e3a8a6b777385f0530bd4"
+    },
+    {
+      "path": "assets/img/team/elec-action-6.e2cd51e9c977.webp",
+      "bytes": 108778,
+      "sha256": "e2cd51e9c977db66ca0e837777de7e536df8e52bfeb15b127b5422775d03a130"
+    },
+    {
+      "path": "assets/img/team/elec-shots-1.e60550399c25.webp",
+      "bytes": 66016,
+      "sha256": "e60550399c2571466306a587bb40dc1728e0cd39fbf301c364ccb29d8859e267"
+    },
+    {
+      "path": "assets/img/team/elec-shots-6.f08bfba7cb45.webp",
+      "bytes": 85794,
+      "sha256": "f08bfba7cb4505a401093888b37d48045fb666c700d08195c8ac7c0599cacbd0"
+    },
+    {
+      "path": "assets/img/team/mech-action-1.bb01e040b4a9.webp",
+      "bytes": 70516,
+      "sha256": "bb01e040b4a935d5691083bdf844fecf0e237e0595dff79e4f613138395b7b51"
+    },
+    {
+      "path": "assets/img/team/mech-action-3.ee020caf4240.webp",
+      "bytes": 124014,
+      "sha256": "ee020caf4240f9c3a1e76bfc1f6c832308d37e0abc3a5a3202cce224c87e26ba"
+    },
+    {
+      "path": "assets/js/car-viewer.292dd945befe.js",
+      "bytes": 11295,
+      "sha256": "292dd945befe502dad409f8aa359e0a6ad0a9e50d7b819979eb5a882574f21fa"
+    },
+    {
+      "path": "assets/js/contact.f28099126bc1.js",
+      "bytes": 1192,
+      "sha256": "f28099126bc13a34087f01f08e00ffd60ce4fa191690926b99fd0973096cf3d4"
+    },
+    {
+      "path": "assets/js/site-nav.e8748b216778.js",
+      "bytes": 2416,
+      "sha256": "e8748b2167786f4fde72a54a3a5267c439b5f0aa2c9b15f699b4b5bf44d862ca"
+    },
+    {
+      "path": "assets/js/sponsors-marquee.74f13d34cb24.js",
+      "bytes": 2437,
+      "sha256": "74f13d34cb2421bad5e3b853f1622c6f57338f745dfb2cc03bfe550d86ac756c"
+    },
+    {
+      "path": "assets/js/team-gallery.fa343b35abcc.js",
+      "bytes": 825,
+      "sha256": "fa343b35abccce170e53e3738ff1c0c05e854cb3fde8fff574b6689301780fe0"
+    },
+    {
+      "path": "assets/models/carrera.0b2a83b775d3.glb",
+      "bytes": 6389772,
+      "sha256": "0b2a83b775d304a37c2e79606182b702824eba18ea46c267910b3a22152b2b03"
+    },
+    {
+      "path": "car.html",
+      "bytes": 20845,
+      "sha256": "325b1db056b24284b17ab7b1506a0ea72c083fb1230ec4b71802ec27b46c451a"
+    },
+    {
+      "path": "contact.html",
+      "bytes": 10922,
+      "sha256": "e99727fe67def68d519fb02e18ffca8a94cfb646c077e6c2fbdfef40cdaf2103"
+    },
+    {
+      "path": "index.html",
+      "bytes": 25388,
+      "sha256": "07badadd9fff5fad6b84d22abb203d3d3bb907962975976857635cf2b52833e8"
+    },
+    {
+      "path": "join.html",
+      "bytes": 12372,
+      "sha256": "864c974b5083dd7dc04b22ca7fc9633f0896f54d2d799de135081ea9090a22e7"
+    },
+    {
+      "path": "LICENSES/Cormorant Garamond/OFL.txt",
+      "bytes": 4413,
+      "sha256": "9134ca6996bd33ea2022e109f13f20e29dee1dcd8b2e8878aad576d2ca334e9f"
+    },
+    {
+      "path": "LICENSES/Lato/OFL.txt",
+      "bytes": 4407,
+      "sha256": "74ba064d03f1f1c4a952da936c3eb71866c34404916734de3cae73b34357e59e"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 77,
+      "sha256": "4c267396726829f529012231e5e180657f70845803a99853389bdcdc71f555c7"
+    },
+    {
+      "path": "serve.json",
+      "bytes": 2420,
+      "sha256": "e90dc1d02e3ec51af3f370ac2d08a28ce02167e3143ce6040b0ff17cbbb9e128"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 507,
+      "sha256": "a1e84eb5cdff7de325740471b69950a02082fe65b662a4f469541df12d12e2db"
+    },
+    {
+      "path": "sponsorship.html",
+      "bytes": 14545,
+      "sha256": "ee9f82142b0829f2ea40abcf039a14c09bd4cb2e79333b840203815b6f826a0f"
+    }
+  ]
+}

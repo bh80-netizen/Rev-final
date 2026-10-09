@@ -1,0 +1,17 @@
+{
+  "exported_on": "2026-10-09",
+  "release_label": "October 8th",
+  "source_branch": "publish-ready-20261008",
+  "source_commit": "52e8bbcb0ed5fe977633235f69739af82a608d82",
+  "checks": [
+    "deploy-standard: all 67 files match the reviewed release checksums.",
+    "deploy-cloudflare-pages: all 67 files match the reviewed release checksums.",
+    "All six source page bodies match the approved pre-release snapshot; production indexing and canonical/social/structured metadata are present.",
+    "All 53 referenced source assets match the approved release, including CSS, scripts, images, model, and sponsorship packet.",
+    "Original model bytes and email-list link preserved; unwanted Join paragraph absent; linked sponsorship PDF included in both deployment folders.",
+    "No local archives, raw CAD/photo library, dependencies, or Git credential files included.",
+    "Source folder renamed to rev-site; every source file is unchanged, source export matches the new release commit, and all three release profiles passed again."
+  ],
+  "status": "Export verified. Public deployment and GitHub upload are assigned to the publishing teammate.",
+  "source_directory": "website-source/rev-site"
+}
