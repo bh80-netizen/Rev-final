@@ -1,0 +1,30 @@
+{
+  // Static-asset Worker for https://riceelectricvehicle.org
+  //
+  // The site has no server-side code, so there is no "main" entry point.
+  // Workers Builds runs the build command below, then serves ./dist.
+  "name": "rev-final",
+  "compatibility_date": "2026-10-06",
+
+  // Produce dist/ with the Cloudflare profile: extensionless canonicals,
+  // _redirects and _headers written for Cloudflare's serving behaviour.
+  "build": {
+    "command": "npm run build:cloudflare"
+  },
+
+  "assets": {
+    "directory": "./dist",
+
+    // Serve the real 404.html with a 404 status. Must NOT be
+    // "single-page-application", which would answer every unknown URL
+    // with index.html and a 200, breaking SEO and the 404 check.
+    "not_found_handling": "404-page",
+
+    // Matches Pages: /about serves about.html, /about.html redirects to /about.
+    "html_handling": "auto-trailing-slash"
+  },
+
+  // Keep rev-final.workers.dev from serving a duplicate indexable copy
+  // of the site alongside the real domain.
+  "workers_dev": false
+}
